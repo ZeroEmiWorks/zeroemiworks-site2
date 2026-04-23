@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# 送信完了・エラーページはインデックスしない
+Disallow: /thanks.html
+Disallow: /404.html
+
+Sitemap: https://zeroemiworks.com/sitemap.xml

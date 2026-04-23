@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ページが見つかりません — ZeroEmiWorks</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 7rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .error-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 40%, rgba(26,92,58,0.15) 0%, transparent 60%), var(--c-bg);
+    }
+    .error-inner { position: relative; z-index: 2; max-width: 560px; }
+    .error-num {
+      font-family: var(--font-display);
+      font-size: clamp(100px, 20vw, 180px);
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(93,216,138,0.2);
+      line-height: 1;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+    .error-title {
+      font-family: var(--font-serif);
+      font-size: clamp(24px, 4vw, 40px);
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.4s forwards;
+    }
+    .error-title em { font-style: italic; color: var(--c-accent); }
+    .error-body {
+      font-size: 15px;
+      color: var(--c-muted);
+      line-height: 1.8;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+    .error-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.8s forwards;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="service.html">Service</a></li>
+    <li><a href="flow.html">Flow</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">まず相談する</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a href="index.html">Home</a><a href="service.html">Service</a><a href="flow.html">Flow</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">まず相談する</a>
+</div>
+
+<section class="error-hero">
+  <div class="error-bg"></div>
+  <div class="error-inner">
+    <div class="error-num">404</div>
+    <h1 class="error-title">ページが<em>見つかりません。</em></h1>
+    <p class="error-body">
+      お探しのページは移動または削除された可能性があります。<br>
+      URLをご確認のうえ、トップページからお探しください。
+    </p>
+    <div class="error-actions">
+      <a href="index.html" class="btn-primary">
+        トップページへ
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="contact.html" class="btn-outline">お問い合わせ</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+        <p>設計事務所・工務店向けに、省エネ計算・BELS・ZEH・補助金申請を支援。代表：加藤貴仁</p>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="flow.html">Flow</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="law.html">特定商取引法に基づく表記</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 ZeroEmiWorks. All rights reserved.</span>
+      <span class="footer-accent">Building for a <span>Zero Emission</span> Future.</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

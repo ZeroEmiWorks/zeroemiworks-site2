@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeroEmiWorksについて｜省エネ計算・申請サポートの実務パートナー — ZeroEmiWorks</title>
+  <meta name="description" content="ZeroEmiWorks代表・加藤貴仁のプロフィールと事業概要。設計事務所・工務店向けに省エネ計算・BELS・ZEH・長期優良住宅・補助金申請の実務サポートを提供しています。">
+  <meta property="og:title" content="ZeroEmiWorksについて — 省エネ計算・申請サポートの実務パートナー">
+  <meta property="og:description" content="設計事務所・工務店向けに、省エネ計算・BELS・ZEH・長期優良住宅・補助金申請の実務サポートを行っています。代表：加藤貴仁">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zeroemiworks.com/about.html">
+  <meta property="og:image" content="https://zeroemiworks.com/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-domain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 3rem; }
+    .about-domain-card { background: var(--c-bg); border: 1px solid var(--c-dim); border-radius: 10px; padding: 1.5rem; transition: border-color 0.3s; }
+    .about-domain-card:hover { border-color: rgba(93,216,138,0.3); }
+    .about-domain-icon { width: 36px; height: 36px; background: rgba(93,216,138,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .about-domain-card h3 { font-size: 14px; font-weight: 500; margin-bottom: 0.4rem; letter-spacing: 0.02em; }
+    .about-domain-card p { font-size: 12px; color: var(--c-muted); line-height: 1.7; font-weight: 300; }
+    .about-stance-list { display: flex; flex-direction: column; gap: 1.5rem; max-width: 760px; }
+    .about-stance-item { display: flex; gap: 1.5rem; align-items: flex-start; padding: 2rem; background: var(--c-bg); border: 1px solid var(--c-dim); border-radius: 12px; transition: border-color 0.3s; }
+    .about-stance-item:hover { border-color: rgba(93,216,138,0.3); }
+    .about-stance-num { font-family: var(--font-display); font-size: 36px; color: rgba(93,216,138,0.2); line-height: 1; flex-shrink: 0; width: 40px; }
+    .about-stance-item h3 { font-size: 15px; font-weight: 500; margin-bottom: 0.5rem; letter-spacing: 0.02em; }
+    .about-stance-item p { font-size: 13px; color: var(--c-muted); line-height: 1.8; font-weight: 300; }
+    .cta-checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; max-width: 480px; margin: 0 auto 2.5rem; text-align: left; }
+    .cta-checklist-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--c-sage); }
+    .cta-checklist-item::before { content: ''; display: block; width: 4px; height: 4px; background: var(--c-accent); border-radius: 50%; flex-shrink: 0; }
+    @media (max-width: 768px) { .about-domain-grid { grid-template-columns: 1fr; } .cta-checklist { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) { .about-domain-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-mark">ZE</div>
+    <span class="logo-text">ZeroEmiWorks</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="service.html">Service</a></li>
+    <li><a href="flow.html">Flow</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">まず相談する</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a href="index.html">Home</a>
+  <a href="service.html">Service</a>
+  <a href="flow.html">Flow</a>
+  <a href="faq.html">FAQ</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="nav-cta">まず相談する</a>
+</div>
+
+<!-- ヒーロー -->
+<section class="about-fullhero">
+  <div class="about-fullhero-bg"></div>
+  <div class="about-fullhero-grid"></div>
+  <div class="about-hero-grid">
+    <div>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span>About</span>
+      </div>
+      <div class="page-hero-label" style="position:static;">About</div>
+      <h1 style="font-family:var(--font-serif);font-size:clamp(40px,5.5vw,72px);font-weight:300;line-height:1.2;letter-spacing:-0.02em;opacity:0;animation:fadeUp 0.9s ease 0.4s forwards;">
+        建築と環境を<br>
+        <em style="font-style:italic;color:var(--c-accent);">つなぐ</em>、<br>
+        実務パートナー。
+      </h1>
+      <p style="font-size:15px;color:var(--c-muted);line-height:1.9;font-weight:300;margin-top:2rem;max-width:480px;opacity:0;animation:fadeUp 0.9s ease 0.6s forwards;">
+        設計事務所・工務店・建設会社の実務担当者さまに向けて、省エネ計算・BELS・ZEH・長期優良住宅・補助金申請に関する実務サポートを提供しています。
+      </p>
+    </div>
+    <div class="portrait-wrap" style="opacity:0;animation:fadeUp 0.9s ease 0.5s forwards;">
+      <div class="portrait-frame">
+        <img src="founder.jpg" alt="代表 加藤貴仁" onerror="this.style.display='none'">
+        <div class="portrait-placeholder">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="30" r="18" stroke="#3a4a3e" stroke-width="2"/>
+            <path d="M10 70c0-16.57 13.43-30 30-30s30 13.43 30 30" stroke="#3a4a3e" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="portrait-overlay">
+          <div class="portrait-name">加藤 貴仁</div>
+          <div class="portrait-title">建築環境設計サポート / ZeroEmiWorks 代表</div>
+        </div>
+      </div>
+      <div class="portrait-badge">代表メッセージ</div>
+    </div>
+  </div>
+</section>
+
+<!-- 代表メッセージ -->
+<section class="section" style="background:var(--c-surface);border-top:1px solid rgba(93,216,138,0.08);">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">代表メッセージ</div>
+    <h2 class="reveal" style="font-family:var(--font-serif);font-size:clamp(30px,4vw,46px);font-weight:300;line-height:1.3;margin-bottom:3rem;">
+      このサービスを<br>
+      <em style="font-style:italic;color:var(--c-accent);">はじめた理由。</em>
+    </h2>
+    <div class="story-body">
+      <p class="reveal">
+        建築・環境分野の実務に触れる中で、省エネ計算やBELS・ZEHといった制度への対応が「設計の後半で慌てて動く」パターンになっているケースを多く見てきました。
+      </p>
+      <p class="story-highlight reveal">
+        「省エネ計算は設計が固まってから」<br>
+        「ZEHを目指したいが、どこに相談すれば良いかわからない」<br>
+        「補助金があると聞いたが、手続きが複雑で動けていない」
+      </p>
+      <p class="reveal">
+        こうした状況を整理するパートナーが、設計の初期段階から必要だと考えています。申請の代行をするだけでなく、<strong>何をいつ、どう動けばよいか</strong>を一緒に見通せるよう支援することが、ZeroEmiWorksのはじまりです。
+      </p>
+      <p class="reveal">
+        現在は、設計事務所・工務店・建設会社に向けて、省エネ計算・BELS・ZEH・長期優良住宅・補助金申請資料の作成・図面修正に関する実務サポートを行っています。住宅・非住宅どちらのご相談にも対応可能です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 対応領域 -->
+<section class="section" style="background:var(--c-bg);">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">対応領域</div>
+    <h2 class="reveal" style="font-family:var(--font-serif);font-size:clamp(30px,4vw,46px);font-weight:300;line-height:1.2;margin-bottom:1rem;">
+      実務でお手伝いできること
+    </h2>
+    <p class="reveal" style="font-size:15px;color:var(--c-muted);font-weight:300;line-height:1.8;max-width:560px;margin-bottom:3.5rem;">
+      省エネ適判・BELS・ZEH・長期優良住宅・補助金申請資料作成・図面修正に対応。<br>
+      設計事務所・工務店・建設会社の実務担当者さまからのご相談をお受けしています。
+    </p>
+    <div class="about-domain-grid">
+      <div class="about-domain-card reveal">
+        <div class="about-domain-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2L2 7v9h5v-5h4v5h5V7L9 2z" stroke="#5dd88a" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>省エネ計算・制度対応の支援</h3>
+        <p>省エネ適合判定・一次エネルギー消費量計算・外皮性能計算など、計算書作成全般をサポートします。</p>
+      </div>
+      <div class="about-domain-card reveal reveal-delay-1">
+        <div class="about-domain-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="2" stroke="#5dd88a" stroke-width="1.2"/><path d="M6 9h6M9 6v6" stroke="#5dd88a" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>設計初期からの環境性能相談</h3>
+        <p>基本設計の段階から関与することで、後から対応するより少ないコストで必要な対応を進めやすくなります。</p>
+      </div>
+      <div class="about-domain-card reveal reveal-delay-2">
+        <div class="about-domain-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2l1.8 3.6L15 6.3l-3 2.9.7 4.1L9 11.4l-3.7 1.9.7-4.1-3-2.9 4.2-.7L9 2z" stroke="#5dd88a" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>BELS・ZEH申請の情報整理とサポート</h3>
+        <p>各制度の要件整理・必要書類の確認・申請手続きのサポートを行います。</p>
+      </div>
+      <div class="about-domain-card reveal">
+        <div class="about-domain-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#5dd88a" stroke-width="1.2"/><path d="M9 5v4l3 2" stroke="#5dd88a" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>補助金申請資料の整理</h3>
+        <p>省エネ・ZEH関連補助金の申請に必要な計算書・資料の作成をサポートします。</p>
+      </div>
+      <div class="about-domain-card reveal reveal-delay-1">
+        <div class="about-domain-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M3 5h12M3 13h8" stroke="#5dd88a" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>住宅・非住宅どちらも相談対応</h3>
+        <p>戸建住宅・集合住宅から、事務所・店舗・工場など非住宅まで、用途を問わず対応しています。</p>
+      </div>
+      <div class="about-domain-card reveal reveal-delay-2">
+        <div class="about-domain-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="1.5" stroke="#5dd88a" stroke-width="1.2"/><path d="M5 9h8M5 6h8M5 12h5" stroke="#5dd88a" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>図面修正・作成にも対応</h3>
+        <p>省エネ計算・申請に必要な図面の修正・作成に対応しています。資料が未整備の状態でもご相談ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 仕事への姿勢（5項目） -->
+<section class="section" style="background:var(--c-surface);border-top:1px solid rgba(93,216,138,0.08);">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">仕事への姿勢</div>
+    <h2 class="reveal" style="font-family:var(--font-serif);font-size:clamp(30px,4vw,46px);font-weight:300;line-height:1.2;margin-bottom:3.5rem;">
+      大切にしていること
+    </h2>
+    <div class="about-stance-list">
+      <div class="about-stance-item reveal">
+        <div class="about-stance-num">01</div>
+        <div>
+          <h3>見えていない人のことまで考える</h3>
+          <p>設計担当者の向こうには、入居者・利用者・将来の所有者がいます。その人たちが快適に過ごせるか、建物が長く価値を持てるか——省エネ計算は数字の話ですが、その先にいる人のことを忘れずに仕事をしています。</p>
+        </div>
+      </div>
+      <div class="about-stance-item reveal">
+        <div class="about-stance-num">02</div>
+        <div>
+          <h3>相手が判断しやすいよう整理する</h3>
+          <p>省エネ・BELS・ZEH・補助金は、制度が複雑で把握しにくい情報が多い領域です。「何が必要か」「どう動けばよいか」を、相手が判断しやすい形に整理してお伝えすることを重視しています。資料や説明を丁寧に整えることが、最終的に判断ミスや手戻りを減らします。</p>
+        </div>
+      </div>
+      <div class="about-stance-item reveal">
+        <div class="about-stance-num">03</div>
+        <div>
+          <h3>設計実務を止めない</h3>
+          <p>省エネ計算や申請書類の対応が原因で、設計の進行が止まることは避けたい。計算・書類作成を並行して進めることで、設計担当者が本来の業務に集中できる環境をつくることが、私たちの役割だと考えています。</p>
+        </div>
+      </div>
+      <div class="about-stance-item reveal">
+        <div class="about-stance-num">04</div>
+        <div>
+          <h3>曖昧なまま進めない</h3>
+          <p>制度の解釈や申請の要件に不明な点がある場合は、推測で進めずに確認を取ります。判断が必要な場面では、選択肢と根拠をお伝えしたうえで進め方を一緒に決めます。対応できない内容は、明確にお伝えします。</p>
+        </div>
+      </div>
+      <div class="about-stance-item reveal">
+        <div class="about-stance-num">05</div>
+        <div>
+          <h3>長く続く信頼を作る</h3>
+          <p>一度きりの依頼で終わらず、次のプロジェクトでもまた相談してもらえる関係を大切にしています。そのためには、今回の仕事を丁寧に仕上げること、約束を守ること、余計なことを言わないこと——地道なことの積み重ねが、信頼につながると思っています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 会社概要 -->
+<section class="section" style="background:var(--c-bg);">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">Company Info</div>
+    <h2 class="reveal" style="font-family:var(--font-serif);font-size:clamp(26px,3vw,38px);font-weight:300;line-height:1.2;margin-bottom:3rem;">
+      会社概要
+    </h2>
+    <table class="company-table reveal">
+      <tr>
+        <th>屋号</th>
+        <td>ZeroEmiWorks（ゼロエミワークス）</td>
+      </tr>
+      <tr>
+        <th>代表者</th>
+        <td>加藤 貴仁</td>
+      </tr>
+      <tr>
+        <th>事業内容</th>
+        <td>省エネ計算・BELS申請サポート・ZEH関連申請サポート・GX志向型住宅サポート・補助金申請資料作成・図面修正・建築環境設計に関するコンサルティング</td>
+      </tr>
+      <tr>
+        <th>拠点</th>
+        <td>東京</td>
+      </tr>
+      <tr>
+        <th>対応エリア</th>
+        <td>全国（オンライン対応）</td>
+      </tr>
+      <tr>
+        <th>所在地詳細</th>
+        <td>お問い合わせ時にご案内します</td>
+      </tr>
+      <tr>
+        <th>営業時間</th>
+        <td>平日 9:00〜18:00（メールは24時間受付、最短2営業日以内にご返信）</td>
+      </tr>
+      <tr>
+        <th>メール</th>
+        <td>
+          <a href="mailto:info@linegia.com" style="color:var(--c-accent);">info@linegia.com</a>
+          <span style="font-size:12px;color:var(--c-muted);margin-left:8px;">（ZeroEmiWorks運営）</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="page-cta on-surface">
+  <div class="page-cta-bg">ABOUT</div>
+  <div class="page-cta-inner">
+    <div class="section-eyebrow" style="justify-content:center;">お気軽にご相談ください</div>
+    <h2>まず、<em>状況を聞かせてください。</em></h2>
+    <p style="margin-bottom:2rem;">設計の段階でも、資料が未整理でも、概算の確認だけでも対応します。</p>
+    <div class="cta-checklist">
+      <div class="cta-checklist-item">初回相談・概算相談 無料</div>
+      <div class="cta-checklist-item">図面がなくても相談可</div>
+      <div class="cta-checklist-item">必要資料が未整理でも可</div>
+      <div class="cta-checklist-item">住宅・非住宅どちらも可</div>
+      <div class="cta-checklist-item">最短2営業日以内に返信</div>
+      <div class="cta-checklist-item">設計段階から相談可</div>
+    </div>
+    <a href="contact.html" class="btn-primary">
+      無料相談を申し込む
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark">ZE</div>
+          <span class="logo-text">ZeroEmiWorks</span>
+        </a>
+        <p>設計事務所・工務店向けに、住宅・非住宅の省エネ計算・BELS・ZEH・補助金申請を支援。建築の手戻りを減らし、設計実務をスムーズに進めるパートナーです。代表：加藤貴仁</p>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="flow.html">Flow</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service.html">省エネ計算</a></li>
+            <li><a href="service.html">BELS申請サポート</a></li>
+            <li><a href="service.html">ZEH・GX志向型住宅</a></li>
+            <li><a href="service.html">補助金申請サポート</a></li>
+            <li><a href="service.html">図面修正・作成</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="law.html">特定商取引法に基づく表記</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 ZeroEmiWorks. All rights reserved.</span>
+      <span class="footer-accent">Building for a <span>Zero Emission</span> Future.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

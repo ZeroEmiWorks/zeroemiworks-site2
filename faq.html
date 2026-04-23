@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>よくある質問（FAQ）｜省エネ計算・BELS・ZEH・長期優良住宅・補助金申請 — ZeroEmiWorks</title>
+  <meta name="description" content="ZeroEmiWorksへのよくある質問。住宅・非住宅の省エネ計算、BELS、ZEH、長期優良住宅、補助金申請の対応範囲・費用・納期・必要資料についてお答えします。">
+  <meta property="og:title" content="よくある質問（FAQ） — ZeroEmiWorks">
+  <meta property="og:description" content="省エネ計算・BELS・ZEH・長期優良住宅・補助金申請の対応範囲・費用・納期についてのよくある質問。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zeroemiworks.com/faq.html">
+  <meta property="og:image" content="https://zeroemiworks.com/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="service.html">Service</a></li>
+    <li><a href="flow.html">Flow</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">まず相談する</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a href="index.html">Home</a><a href="service.html">Service</a><a href="flow.html">Flow</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">まず相談する</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-num">Q</div>
+  <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>FAQ</span></div>
+  <div class="page-hero-label">FAQ</div>
+  <h1>よくある質問に、<br><em>正直に答える。</em></h1>
+  <p class="page-hero-sub">対応範囲・費用・納期・必要資料について、よくいただくご質問にお答えします。ここで解決しない場合はお気軽にご相談ください。</p>
+</section>
+
+<!-- FAQカード（ブログリンク仕様） -->
+<section class="section" style="background:var(--c-bg);border-top:1px solid rgba(93,216,138,0.08);">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">よく読まれる質問</div>
+    <div class="articles-grid" style="margin-top:1rem;">
+      <a href="faq.html#timing" class="article-card reveal">
+        <span class="article-tag">相談時期</span>
+        <div class="article-title">設計初期の段階から相談できますか？図面がなくても大丈夫ですか？</div>
+        <div class="article-meta"><span>FAQ</span><span>→</span></div>
+      </a>
+      <a href="faq.html#subsidy-doc" class="article-card reveal reveal-delay-1">
+        <span class="article-tag">補助金</span>
+        <div class="article-title">補助金申請の資料作成まで対応していますか？</div>
+        <div class="article-meta"><span>FAQ</span><span>→</span></div>
+      </a>
+      <a href="faq.html#bels-apply" class="article-card reveal reveal-delay-2">
+        <span class="article-tag">BELS</span>
+        <div class="article-title">BELSの評価申請まで対応していますか？</div>
+        <div class="article-meta"><span>FAQ</span><span>→</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--c-surface);border-top:1px solid rgba(93,216,138,0.08);">
+  <div class="section-inner">
+    <!-- Categories（英語表記） -->
+    <div class="section-eyebrow reveal">Categories</div>
+    <div class="faq-categories reveal">
+      <button class="faq-cat-btn active" data-cat="all">すべて</button>
+      <button class="faq-cat-btn" data-cat="cost">費用・料金</button>
+      <button class="faq-cat-btn" data-cat="service">サービス内容</button>
+      <button class="faq-cat-btn" data-cat="subsidy">補助金</button>
+      <button class="faq-cat-btn" data-cat="bels">BELS</button>
+      <button class="faq-cat-btn" data-cat="flow">進め方・期間</button>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <!-- 費用・料金 -->
+      <div class="faq-item" data-cat="cost">
+        <div class="faq-q"><span>費用はどのくらいかかりますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">建物の用途・規模・計算ルート・対応内容によって変わります。まず現状をお聞きしたうえで、お見積もりをご提示します。お見積もりは無料ですので、お気軽にご相談ください。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="cost">
+        <div class="faq-q"><span>概算見積は可能ですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、可能です。図面が整っていない段階でも、建物の用途・規模・対応内容の概要をお聞きすることで、おおよその費用感をお伝えできます。まずはご連絡ください。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="cost">
+        <div class="faq-q"><span>相談・見積もりは無料ですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、相談・お見積もりは無料です。図面や仕様書をお送りいただければ、必要な計算・手続きと費用の目安をご案内します。資料が整っていない段階でも受け付けています。</div></div>
+      </div>
+
+      <!-- サービス内容 -->
+      <div id="scope" class="faq-item" data-cat="service">
+        <div class="faq-q"><span>住宅・非住宅どちらにも対応していますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、どちらにも対応しています。戸建住宅・集合住宅から、事務所・店舗・工場・学校・医療施設など非住宅建築物まで、幅広くご相談いただけます。用途や規模によって計算ルートや必要書類が変わりますので、まず現状をお聞かせください。</div></div>
+      </div>
+
+      <div id="timing" class="faq-item" data-cat="service">
+        <div class="faq-q"><span>設計初期の段階から相談できますか？図面がなくても大丈夫ですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、どちらも対応できます。設計初期段階からのご相談を歓迎しています。図面が整っていない段階でも、建物概要をお聞きすることで、必要な対応や概算の目安をご案内できます。設計が進んでからより、早い段階でご相談いただいた方が手戻りを減らせる場合が多いです。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="service">
+        <div class="faq-q"><span>どのタイミングで相談するのがベストですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">基本設計〜実施設計の段階が最もスムーズに進みやすいです。省エネ計算の結果によっては仕様の見直しが必要になる場合もあるため、設計が固まる前にご相談いただくと、修正コストを抑えられます。確認申請中・着工後でも対応できる場合がありますので、まずご相談ください。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="service">
+        <div class="faq-q"><span>図面が未完成でも相談できますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、相談可能です。図面がない段階では概算でのご案内になりますが、「どんな計算が必要になるか」「いつ頃から動けばよいか」を一緒に整理することができます。平面図・立面図・断面図など、ある程度の図面があれば計算を進めることができます。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="service">
+        <div class="faq-q"><span>急ぎ案件にも対応できますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">スケジュールによります。まず希望の納期をお知らせください。通常対応が難しい場合も、対応可能かどうかを正直にお伝えします。スケジュールに制約がある場合は、最初にお知らせいただくとスムーズです。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="service">
+        <div class="faq-q"><span>確認申請中でも依頼できますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、対応できる場合があります。確認申請中の案件では、省エネ計算書の追加・修正や補助金申請資料の作成などが主な依頼内容になります。現在の状況をお聞かせいただければ、対応可能かどうかをお答えします。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="service">
+        <div class="faq-q"><span>設計変更が発生した場合はどうなりますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">軽微な変更（設備機器の変更・仕様の微調整など）は基本料金内で対応することが多いですが、大幅な変更が生じた場合は別途お見積もりをご提示します。変更が生じそうな場合は、早めにご連絡ください。</div></div>
+      </div>
+
+      <!-- BELS -->
+      <div id="bels-apply" class="faq-item" data-cat="bels">
+        <div class="faq-q"><span>BELSの評価申請まで対応していますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">BELS申請に必要な省エネ計算書・書類の作成をサポートしています。評価機関への申請書類の整理・確認もお手伝いします。評価機関とのやりとりについては、状況に応じてご支援します。申請手続きの最終的な責任は申請者（お客様）になります。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="bels">
+        <div class="faq-q"><span>長期優良住宅のどこまで対応可能ですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">長期優良住宅認定申請に必要な省エネ計算書・関連書類の作成に対応しています。申請書類全体の整理サポートも可能です。認定申請の手続き全体については、内容に応じて対応範囲をご確認のうえ進めます。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="bels">
+        <div class="faq-q"><span>省エネ計算とBELS取得は別々にお願いできますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、省エネ計算のみ・BELS申請書類作成のみ、それぞれ単独でご依頼いただけます。ただし、BELSの取得には省エネ計算が必要になりますので、セットでご依頼いただいた方が効率的かつ費用を抑えられます。</div></div>
+      </div>
+
+      <!-- 補助金 -->
+      <div id="subsidy-doc" class="faq-item" data-cat="subsidy">
+        <div class="faq-q"><span>補助金申請の資料作成まで対応していますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、補助金申請に必要な計算書・申請資料の作成はサポートしています。ただし、補助金の採択は審査機関が判断するものであり、採択を保証することはできません。申請先や手続きの最終的な責任は申請者（お客様）になります。対応できる範囲については、まずご相談のうえで確認します。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="subsidy">
+        <div class="faq-q"><span>補助金申請だけの相談も可能ですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、補助金申請に関するご相談のみでも受け付けています。ただし、補助金申請には省エネ計算書等の技術書類が必要な場合がほとんどです。既存の書類がある場合はそれを活用し、不足している場合は合わせてご対応します。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="subsidy">
+        <div class="faq-q"><span>どんな補助金に対応していますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">省エネ・ZEH関連の補助金を中心に対応しています。補助金の種類・要件は毎年変わるため、最新の状況はご相談時にご確認ください。プロジェクトの内容に合わせて、活用できる可能性のある補助金をご案内します。</div></div>
+      </div>
+
+      <!-- 進め方・期間 -->
+      <div class="faq-item" data-cat="flow">
+        <div class="faq-q"><span>納期の目安はどれくらいですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">内容・規模・資料の揃い具合によって変わります。省エネ計算書のみであれば1〜2週間程度が目安ですが、申請書類の作成や図面修正が伴う場合はその分の期間が加わります。スケジュールに制約がある場合は、最初にお知らせください。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="flow">
+        <div class="faq-q"><span>相談時に必要な資料は何ですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">最初のご相談では、建物の概要（用途・規模・構造・立地）と何の計算・申請が必要かをお聞きできれば十分です。図面や仕様書があれば、より具体的なご案内ができます。資料が整っていない段階でも相談を受け付けています。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="flow">
+        <div class="faq-q"><span>対応エリアはどこですか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">計算・書類作成業務はオンラインで全国対応しています。打ち合わせはリモートが基本です。現地確認が必要な場合は別途ご相談ください。</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="flow">
+        <div class="faq-q"><span>秘密保持契約（NDA）は締結できますか？</span><div class="faq-icon">+</div></div>
+        <div class="faq-a"><div class="faq-a-inner">はい、NDA（秘密保持契約）の締結に対応しています。プロジェクト開始前にNDAをご希望の場合はお申し付けください。設計図面・仕様書などの機密情報は適切に管理します。</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 用語集 -->
+<section class="section" style="background:var(--c-bg);border-top:1px solid rgba(93,216,138,0.08);">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">用語集</div>
+    <h2 class="reveal" style="font-family:var(--font-serif);font-size:clamp(30px,4vw,44px);font-weight:300;line-height:1.2;margin-bottom:1rem;">関連する主な用語</h2>
+    <p class="reveal" style="font-size:14px;color:var(--c-muted);font-weight:300;line-height:1.8;margin-bottom:4rem;max-width:500px;">省エネ計算・申請に関連する主な用語を簡単にご説明します。</p>
+    <div class="glossary-grid reveal">
+      <div class="glossary-item">
+        <div class="glossary-term">省エネ適合判定</div>
+        <div class="glossary-term-jp">省エネ適合性判定</div>
+        <div class="glossary-def">建築物省エネ法に基づき、一定規模以上の建築物が省エネ基準に適合しているかを第三者機関が判定する手続き。判定機関への申請には計算書・図面等の書類が必要。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">BELS</div>
+        <div class="glossary-term-jp">建築物省エネルギー性能表示制度</div>
+        <div class="glossary-def">建物の省エネ性能を第三者評価機関が審査し、★1〜★5の星で表示する制度。住宅・非住宅どちらにも対応。各種補助金の要件になる場合がある。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">ZEH</div>
+        <div class="glossary-term-jp">ゼッチ / Net Zero Energy House</div>
+        <div class="glossary-def">住宅において、外皮性能の向上と設備の高効率化により、年間の一次エネルギー消費量の収支をゼロ以下にすることを目指した住宅。住宅向けの補助金要件になる場合がある。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">UA値</div>
+        <div class="glossary-term-jp">外皮平均熱貫流率</div>
+        <div class="glossary-def">建物の断熱性能を示す指標。値が小さいほど断熱性能が高い。省エネ基準の適合判定やBELS・ZEH申請において、重要な計算結果のひとつ。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">長期優良住宅</div>
+        <div class="glossary-term-jp">長期優良住宅の普及の促進に関する法律</div>
+        <div class="glossary-def">長期にわたり良好な状態で使用できる住宅として認定される制度。省エネ性能・耐震性・劣化対策等の要件を満たす必要がある。各種税制優遇・補助金の対象になる場合がある。</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">一次エネルギー消費量</div>
+        <div class="glossary-term-jp">Primary Energy Consumption</div>
+        <div class="glossary-def">建物で使用するエネルギーを、石油・天然ガスなどの一次エネルギーに換算した量。省エネ基準への適合確認や、BELS・ZEH申請の計算において算出する。単位はMJ/㎡年。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-cta on-surface">
+  <div class="page-cta-bg">FAQ</div>
+  <div class="page-cta-inner">
+    <div class="section-eyebrow" style="justify-content:center;">ここで解決しなかった場合</div>
+    <h2>直接、<em>聞いてください。</em></h2>
+    <p>どんな些細なことでも構いません。まずご連絡いただければ、わかる範囲でお答えします。</p>
+    <a href="contact.html" class="btn-primary">無料相談を申し込む →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+        <p>設計事務所・工務店向けに、住宅・非住宅の省エネ計算・BELS・ZEH・補助金申請を支援。建築の手戻りを減らし、設計実務をスムーズに進めるパートナーです。代表：加藤貴仁</p>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="flow.html">Flow</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="service.html">省エネ計算</a></li><li><a href="service.html">BELS申請サポート</a></li><li><a href="service.html">ZEH・GX志向型住宅</a></li><li><a href="service.html">補助金申請サポート</a></li><li><a href="service.html">図面修正・作成</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="law.html">特定商取引法に基づく表記</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 ZeroEmiWorks. All rights reserved.</span>
+      <span class="footer-accent">Building for a <span>Zero Emission</span> Future.</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

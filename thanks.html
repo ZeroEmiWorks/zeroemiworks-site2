@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お送りいただきありがとうございます — ZeroEmiWorks</title>
+  <meta name="description" content="お問い合わせを受け付けました。最短2営業日以内にご連絡いたします。">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .thanks-hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 7rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .thanks-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 40%, rgba(26,92,58,0.2) 0%, transparent 60%),
+        var(--c-bg);
+    }
+    .thanks-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(93,216,138,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(93,216,138,0.04) 1px, transparent 1px);
+      background-size: 80px 80px;
+      -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 70%);
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 70%);
+    }
+    .thanks-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 640px;
+    }
+    .thanks-check {
+      width: 80px;
+      height: 80px;
+      background: rgba(93,216,138,0.12);
+      border: 1px solid rgba(93,216,138,0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.7s ease 0.2s forwards;
+    }
+    .thanks-label {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      color: var(--c-accent);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.4s forwards;
+    }
+    .thanks-label::before, .thanks-label::after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--c-accent);
+    }
+    .thanks-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.5s forwards;
+    }
+    .thanks-headline em {
+      font-style: italic;
+      color: var(--c-accent);
+    }
+    .thanks-body {
+      font-size: 16px;
+      color: var(--c-muted);
+      line-height: 1.9;
+      font-weight: 300;
+      margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.7s forwards;
+    }
+    .thanks-info-box {
+      background: rgba(93,216,138,0.05);
+      border: 1px solid rgba(93,216,138,0.15);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+      text-align: left;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.9s forwards;
+    }
+    .thanks-info-box h3 {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+      color: var(--c-text);
+    }
+    .thanks-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .thanks-info-list li {
+      font-size: 13px;
+      color: var(--c-muted);
+      font-weight: 300;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.6;
+    }
+    .thanks-info-list li::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: var(--c-accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+    .thanks-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 1.1s forwards;
+    }
+  </style>
+  <meta property="og:title" content="お送りいただきありがとうございます — ZeroEmiWorks">
+  <meta property="og:description" content="お問い合わせを受け付けました。最短2営業日以内にご連絡いたします。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zeroemiworks.com/thanks.html">
+  <meta property="og:image" content="https://zeroemiworks.com/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="service.html">Service</a></li>
+    <li><a href="flow.html">Flow</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">まず相談する</a></li>
+  </ul>
+  <button class="nav-hamburger" id="navHamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-mobile-menu" id="navMobileMenu">
+  <a href="index.html">Home</a><a href="service.html">Service</a><a href="flow.html">Flow</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">まず相談する</a>
+</div>
+
+<section class="thanks-hero">
+  <div class="thanks-bg"></div>
+  <div class="thanks-grid"></div>
+
+  <div class="thanks-inner">
+    <div class="thanks-check">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <path d="M8 18l7 7 13-13" stroke="#5dd88a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="thanks-label">Thank You</div>
+
+    <h1 class="thanks-headline">
+      お送りいただき<br>
+      <em>ありがとうございます。</em>
+    </h1>
+
+    <p class="thanks-body">
+      ご相談内容を受け取りました。<br>
+      内容を確認のうえ、<strong style="color:var(--c-text);font-weight:500;">最短2営業日以内</strong>にご連絡いたします。<br>
+      お急ぎの場合は、直接メールでご連絡ください。
+    </p>
+
+    <div class="thanks-info-box">
+      <h3>次のステップについて</h3>
+      <ul class="thanks-info-list">
+        <li>担当より、いただいたメールアドレス宛にご連絡いたします。迷惑メールフォルダもご確認ください。</li>
+        <li>ご返信の際に、プロジェクトの詳細や現状の設計資料についてお聞きする場合があります。図面や仕様書がない段階でも、概算での対応が可能です。</li>
+        <li>ご連絡先：<a href="mailto:info@linegia.com" style="color:var(--c-accent);text-decoration:none;">info@linegia.com</a></li>
+      </ul>
+    </div>
+
+    <div class="thanks-actions">
+      <a href="index.html" class="btn-primary">
+        トップページへ
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="service.html" class="btn-outline">サービス内容を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- フッター -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+        <p>設計事務所・工務店向けに、住宅・非住宅の省エネ計算・BELS・ZEH・補助金申請を支援。建築の手戻りを減らし、設計実務をスムーズに進めるパートナーです。代表：加藤貴仁</p>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="flow.html">Flow</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h4>Services</h4><ul><li><a href="service.html">省エネ計算</a></li><li><a href="service.html">BELS申請サポート</a></li><li><a href="service.html">ZEH・GX志向型住宅</a></li><li><a href="service.html">補助金申請サポート</a></li><li><a href="service.html">図面修正・作成</a></li></ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="law.html">特定商取引法に基づく表記</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 ZeroEmiWorks. All rights reserved.</span>
+      <span class="footer-accent">Building for a <span>Zero Emission</span> Future.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
