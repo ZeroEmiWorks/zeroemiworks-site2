@@ -3,161 +3,632 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>省エネ基準適合義務とは？設計実務で押さえるべきポイント — ZeroEmiWorks</title>
-  <meta name="description" content="省エネ基準適合義務の実務対応を、設計事務所・工務店向けに整理。初期段階で確認したい項目、実務チェック表、注意点、相談の進め方をまとめています。">
-  <meta property="og:title" content="省エネ基準適合義務とは？設計実務で押さえるべきポイント — ZeroEmiWorks">
-  <meta property="og:description" content="省エネ基準適合義務に関する実務上の確認ポイントを整理した記事です。">
+
+  <title>省エネ基準適合義務とは？設計実務で押さえるべきポイント【2026年版】｜ZeroEmiWorks</title>
+  <meta name="description" content="2025年4月の省エネ基準適合義務化を、CO2排出割合・対象範囲・BELS/ZEH/長期優良住宅との関係から整理。制度の本質を押さえ、設計実務を止めずに建物の未来価値を高めるための実務ガイド。">
+
+  <meta property="og:title" content="省エネ基準適合義務とは？設計実務で押さえるべきポイント｜ZeroEmiWorks">
+  <meta property="og:description" content="省エネ基準適合義務を、制度対応だけでなく建物の資産価値・ESG・脱炭素の流れから整理します。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://zeroemiworks.com/blog-shoene.html">
   <meta property="og:image" content="https://zeroemiworks.com/ogp.png">
+
   <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+
+<body class="blog-article-page">
 
 <nav id="nav">
-  <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+  <a href="index.html" class="nav-logo">
+    <div class="logo-mark">ZE</div>
+    <span class="logo-text">ZeroEmiWorks</span>
+  </a>
+
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="flow.html">Flow</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" class="nav-cta">まず相談する</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="service.html">Service</a></li>
+    <li><a href="flow.html">Flow</a></li>
+    <li><a href="blog.html">BLOG</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="nav-cta">まず相談する</a></li>
   </ul>
-  <button class="nav-hamburger" id="navHamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+
+  <button class="nav-hamburger" id="navHamburger" aria-label="メニューを開く">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
 <div class="nav-mobile-menu" id="navMobileMenu">
-  <a href="index.html">Home</a><a href="service.html">Service</a><a href="flow.html">Flow</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">まず相談する</a>
+  <a href="index.html">Home</a>
+  <a href="service.html">Service</a>
+  <a href="flow.html">Flow</a>
+  <a href="blog.html">BLOG</a>
+  <a href="faq.html">FAQ</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" class="nav-cta">まず相談する</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-grid"></div>
-  <div class="page-hero-num">C</div>
-  <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="blog.html">COLUMN</a><span class="sep">/</span><span>省エネ基準</span></div>
-  <div class="page-hero-label">COLUMN</div>
-  <h1>省エネ基準適合義務とは？<br><em>設計実務で押さえるべきポイント</em></h1>
-  <p class="page-hero-sub">制度の概要を理解するだけでは、実務は進みません。計画初期で何を確認し、どの段階で何を確定していくかを整理します。</p>
-</section>
+<main class="blog-article-main">
 
-<section class="section" style="background:var(--c-bg);">
-  <div class="blog-article-wrap">
-    <header class="blog-article-header reveal">
-      <div class="section-eyebrow">省エネ基準</div>
-      <h1>省エネ基準適合義務とは？設計実務で押さえるべきポイント</h1>
-      <p class="blog-lead">適合義務の対象かどうか、どの基準で確認するか、申請時点でどこまで仕様を固めるか。案件ごとに判断が分かれやすい部分を、実務の順番でまとめました。制度運用は地域や審査機関の取り扱いで差が出る場合があるため、最終判断は最新要件の確認を前提に進めることが大切です。</p>
-    </header>
+  <header class="blog-article-hero">
+    <div class="blog-article-container">
+      <a href="blog.html" class="blog-back-link">← COLUMN一覧へ戻る</a>
 
-    <div class="blog-layout reveal reveal-delay-1">
-      <aside class="blog-toc">
-        <h2>目次</h2>
-        <ul>
-          <li><a href="#sec1">1. タイトル</a></li>
-          <li><a href="#sec2">2. リード文</a></li>
-          <li><a href="#sec3">3. 目次</a></li>
-          <li><a href="#sec4">4. 本文</a></li>
-          <li><a href="#sec5">5. 実務チェック表</a></li>
-          <li><a href="#sec6">6. よくある注意点</a></li>
-          <li><a href="#sec7">7. ZeroEmiWorksに相談できること</a></li>
-          <li><a href="#sec8">8. CTA「まずは相談する」</a></li>
-        </ul>
-      </aside>
+      <div class="blog-breadcrumb">COLUMN / 省エネ基準</div>
+      <div class="blog-category">省エネ基準</div>
+      <p class="blog-updated">更新日：2026年4月24日</p>
 
-      <article class="blog-content">
-        <section id="sec1">
-          <h3>1. タイトル</h3>
-          <p>省エネ基準適合義務とは？設計実務で押さえるべきポイント</p>
-        </section>
+      <h1>
+        省エネ基準適合義務とは？<br>
+        設計実務で押さえるべきポイント
+      </h1>
 
-        <section id="sec2">
-          <h3>2. リード文</h3>
-          <p>計画初期の段階で、用途・規模・申請スケジュールを整理しておくと、後工程での手戻りを抑えやすくなります。特に仕様確定のタイミングが遅れると、計算条件の再設定や図面修正が増える傾向があります。</p>
-        </section>
+      <p class="blog-lead">
+        省エネ基準適合義務は、単なる法改正ではありません。建築そのものの価値基準が変わり始めた、ということです。
+        これからの建築は「建てること」だけでなく、「将来も選ばれ続けること」が問われます。
+      </p>
 
-        <section id="sec3">
-          <h3>3. 目次</h3>
-          <ul class="blog-note-list">
-            <li>対象判断の前提を揃える</li>
-            <li>計算条件を設計チーム内で共有する</li>
-            <li>確認申請との整合を早めに取る</li>
-          </ul>
-        </section>
-
-        <section id="sec4">
-          <h3>4. 本文</h3>
-          <p>実務で最初に整理したいのは、対象建物の用途・規模・評価ルートです。次に、外皮・設備の仕様がどの段階で確定するかを設計スケジュールに落とし込みます。ここが曖昧だと、計算の更新が頻発します。</p>
-          <p>また、意匠・設備・申請担当で使う数値が一致しているかを定例で確認するだけでも、申請直前の差し戻しリスクは下げやすくなります。制度対応は「計算担当だけの作業」にしないことが重要です。</p>
-        </section>
-
-        <section id="sec5">
-          <h3>5. 実務チェック表</h3>
-          <div class="blog-table-wrap">
-            <table class="blog-table">
-              <thead>
-                <tr><th>確認項目</th><th>推奨タイミング</th><th>実務メモ</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>用途・規模・対象要件</td><td>基本計画</td><td>対象判断の根拠を記録しておく</td></tr>
-                <tr><td>外皮仕様の確定見込み</td><td>基本設計〜実施設計初期</td><td>変更可能性の高い部位を先に洗い出す</td></tr>
-                <tr><td>設備仕様の整合</td><td>実施設計</td><td>設備担当と数値の出典を統一する</td></tr>
-                <tr><td>申請図書の突合</td><td>申請前</td><td>図面・計算書・提出書類の表記差を最終確認</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section id="sec6">
-          <h3>6. よくある注意点</h3>
-          <ul class="blog-warn-list">
-            <li>仕様が未確定のまま計算を先行し、申請直前に再計算が必要になる。</li>
-            <li>図面更新が計算担当へ共有されず、提出直前に不整合が見つかる。</li>
-            <li>審査機関ごとの運用差を確認せず、想定より補足資料が増える。</li>
-          </ul>
-        </section>
-
-        <section id="sec7">
-          <h3>7. ZeroEmiWorksに相談できること</h3>
-          <div class="blog-mini-cta">
-            <h4>初期整理から申請前確認まで対応</h4>
-            <p>案件条件に応じて、必要な計算範囲の整理、図面と計算条件の突合、提出資料の最終確認までサポートします。どの段階から着手するかも一緒に決められます。</p>
-            <ul class="blog-check-list">
-              <li>計算の前提条件整理</li>
-              <li>設計変更時の影響確認</li>
-              <li>申請前の整合チェック</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="sec8">
-          <h3>8. CTA「まずは相談する」</h3>
-          <a href="contact.html" class="btn-primary">まずは相談する →</a>
-        </section>
-      </article>
+      <div class="blog-article-meta">
+        <span>ZeroEmiWorks COLUMN</span>
+        <span>省エネ計算・BELS・ZEH・長期優良住宅</span>
+      </div>
     </div>
-  </div>
-</section>
+  </header>
+
+  <article class="blog-article-container blog-content">
+
+    <section class="blog-intro-box">
+      <p>
+        2025年4月から、原則としてすべての新築住宅・非住宅に対して、省エネ基準への適合が義務化されました。
+        国土交通省も「原則全ての新築住宅・非住宅への省エネ基準適合の義務付け」として、令和7年4月1日施行を公表しています。
+      </p>
+      <p>
+        ただし、本質は「法律だから対応する」ではありません。
+        省エネ性能の高い建物は、資産価値の維持、補助金・融資、テナントや購入者への説明、企業のESG評価にも関わる領域になっています。
+      </p>
+      <p>
+        ZEH、BELS、長期優良住宅、省エネ適判。これらは別々の制度ではなく、これからの建築が向かう方向につながっています。
+      </p>
+    </section>
+
+    <nav class="blog-toc">
+      <p class="blog-toc-title">目次</p>
+      <ol>
+        <li><a href="#section01">省エネ計算とは何か</a></li>
+        <li><a href="#section02">なぜ今、義務化されたのか</a></li>
+        <li><a href="#section03">建築分野のCO₂排出割合</a></li>
+        <li><a href="#section04">2025年4月 義務化の対象</a></li>
+        <li><a href="#section05">ESG・SDGs・GXと建築</a></li>
+        <li><a href="#section06">ZEH・BELS・長期優良住宅</a></li>
+        <li><a href="#section07">2050年カーボンニュートラル</a></li>
+        <li><a href="#section08">資産価値との関係</a></li>
+        <li><a href="#section09">ZeroEmiWorksが目指すこと</a></li>
+        <li><a href="#section10">まずは相談する</a></li>
+      </ol>
+    </nav>
+
+    <section class="blog-section" id="section01">
+      <h2>1. 省エネ計算とは何か</h2>
+
+      <p>
+        省エネ計算とは、その建物がどれだけエネルギーを消費するかを数値で確認するものです。
+        大きく分けると、確認するのは「外皮性能」と「一次エネルギー消費量」です。
+      </p>
+
+      <h3>外皮性能</h3>
+      <p>
+        外皮性能は、建物の「包み込む性能」です。
+        断熱材、窓性能、Low-Eガラス、屋根、壁、床、玄関ドアなどをもとに、
+        どれだけ熱を逃がさないか、どれだけ日射を防ぐかを確認します。
+      </p>
+
+      <div class="blog-point-list">
+        <span>UA値（外皮平均熱貫流率）</span>
+        <span>ηAC値（冷房期の日射熱取得率）</span>
+      </div>
+
+      <h3>一次エネルギー消費量</h3>
+      <p>
+        一次エネルギー消費量は、建物の「使うエネルギー」です。
+        空調、換気、給湯、照明、昇降機、太陽光発電などを含め、
+        年間でどれだけエネルギーを使うかを確認します。
+      </p>
+
+      <p>
+        ここで重要なのは、省エネ計算は確認申請のためだけの数字ではないということです。
+        この数値は、光熱費、快適性、テナント価値、売却時の評価、補助金活用に直結します。
+      </p>
+
+      <p class="blog-emphasis">
+        つまり、省エネ計算は、建物の未来価値を設計するための数字です。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section02">
+      <h2>2. なぜ今、義務化されたのか</h2>
+
+      <p>
+        理由は明確です。地球温暖化が、もう未来の話ではないからです。
+      </p>
+
+      <p>
+        世界では、気温上昇、異常気象、豪雨、猛暑、災害の激甚化が進んでいます。
+        その大きな原因が温室効果ガスであり、特にCO₂です。
+        そしてその多くは、石油、石炭、天然ガスといった化石燃料を使うことで発生します。
+      </p>
+
+      <p>
+        建物で電気を使う。空調を回す。給湯を使う。
+        それ自体が、地球温暖化とつながっています。
+      </p>
+
+      <p>
+        だからこそ、建物の省エネ性能を上げることは、単なる設計ではなく、社会全体の課題になりました。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section03">
+      <h2>3. 建築分野のCO₂排出割合</h2>
+
+      <p>
+        「建築って、そんなに関係あるの？」と思われることがあります。
+        答えは、非常に大きいです。
+      </p>
+
+      <p>
+        環境省の資料では、家庭部門と業務その他部門を合わせると、
+        日本全体のエネルギー起源CO₂排出量の約3割を占めます。
+      </p>
+
+      <figure class="source-image-card">
+        <img src="assets/co2-emissions-chart.png" alt="エネルギー起源CO2排出量の部門別割合" class="source-image">
+        <figcaption>
+          出典：環境省「2022年度（令和4年度）温室効果ガス排出・吸収量について」等をもとに掲載
+        </figcaption>
+      </figure>
+
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>部門</th>
+              <th>内容</th>
+              <th>割合</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>家庭部門</td>
+              <td>住宅</td>
+              <td>約16％</td>
+            </tr>
+            <tr>
+              <td>業務その他部門</td>
+              <td>オフィス・商業施設など</td>
+              <td>約19％</td>
+            </tr>
+            <tr>
+              <td><strong>合計</strong></td>
+              <td><strong>建築分野全体</strong></td>
+              <td><strong>約35％</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="source-note">
+        ※割合はエネルギー起源CO₂排出量における部門別割合をもとに整理しています。資料年度や集計区分により数値は変動します。
+      </p>
+
+      <p>
+        建物は一度建てると、何十年も使われます。
+        設計時の判断が、10年後、20年後、30年後まで影響します。
+        だからこそ、設計段階で省エネ性能をどう考えるかが重要になります。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section04">
+      <h2>4. 2025年4月 義務化の対象</h2>
+
+      <p>
+        以前は、建物の規模や用途によって、適合義務、届出義務、説明義務などの扱いが分かれていました。
+        しかし2025年4月以降は、原則としてすべての新築住宅・非住宅に省エネ基準への適合が求められます。
+      </p>
+
+      <figure class="source-image-card">
+        <img src="assets/energy-standard-obligation.png" alt="省エネ基準適合に係る規制の概要" class="source-image">
+        <figcaption>
+          出典：国土交通省「省エネ基準適合に係る規制の概要」等をもとに掲載
+        </figcaption>
+      </figure>
+
+      <div class="table-scroll">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>旧制度</th>
+              <th>2025年4月以降</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>対象</td>
+              <td>建物の規模や用途により扱いが分かれていた</td>
+              <td>原則すべての新築住宅・非住宅が対象</td>
+            </tr>
+            <tr>
+              <td>住宅</td>
+              <td>一定規模では届出義務・説明義務など</td>
+              <td>省エネ基準への適合義務</td>
+            </tr>
+            <tr>
+              <td>非住宅</td>
+              <td>一定規模以上を中心に適合義務</td>
+              <td>規模にかかわらず原則適合義務</td>
+            </tr>
+            <tr>
+              <td>実務への影響</td>
+              <td>案件ごとに対象判断が必要</td>
+              <td>基本的に省エネ確認を前提に進める</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        実務上は、「対象かどうか」よりも、
+        「どの段階で仕様を固めるか」「どの資料をいつ揃えるか」が重要になります。
+        省エネ基準適合義務は、申請直前に確認するものではなく、基本設計から意識しておくべき前提です。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section05">
+      <h2>5. ESG・SDGs・GXと建築</h2>
+
+      <p>
+        ESG、SDGs、GXは建築とも直結しています。
+        企業は今、「利益を出しているか」だけではなく、
+        「環境や社会にどう向き合っているか」も見られています。
+      </p>
+
+      <p>
+        建物も同じです。
+        環境性能の高いオフィス、ZEH住宅、BELS取得建物、脱炭素対応施設は、
+        企業の姿勢そのものを表します。
+      </p>
+
+      <div class="blog-highlight-box">
+        <p>
+          建物の環境性能は、融資、採用、投資判断、テナント誘致、ブランド価値に影響します。
+          これからの建物は、企業のESGを表す重要な資産になっていきます。
+        </p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="section06">
+      <h2>6. ZEH・BELS・長期優良住宅</h2>
+
+      <p>
+        ZEH、BELS、長期優良住宅、省エネ適判は、別々に見える制度ですが、目指す方向はつながっています。
+      </p>
+
+      <div class="relation-flow">
+        <div class="relation-item">
+          <span class="relation-label">省エネ適判</span>
+          <strong>最低基準</strong>
+        </div>
+        <div class="relation-arrow">↓</div>
+        <div class="relation-item">
+          <span class="relation-label">BELS</span>
+          <strong>性能の見える化</strong>
+        </div>
+        <div class="relation-arrow">↓</div>
+        <div class="relation-item">
+          <span class="relation-label">ZEH</span>
+          <strong>高性能化＋創エネ</strong>
+        </div>
+        <div class="relation-arrow">↓</div>
+        <div class="relation-item">
+          <span class="relation-label">長期優良住宅</span>
+          <strong>資産価値・長寿命化</strong>
+        </div>
+      </div>
+
+      <div class="table-scroll">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>制度</th>
+              <th>役割</th>
+              <th>実務上の意味</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>省エネ適判</td>
+              <td>最低基準を満たす</td>
+              <td>建築確認・着工に関わる基本条件</td>
+            </tr>
+            <tr>
+              <td>BELS</td>
+              <td>性能を見える化する</td>
+              <td>建物の省エネ性能を第三者評価として示す</td>
+            </tr>
+            <tr>
+              <td>ZEH</td>
+              <td>高断熱・省エネ・創エネ</td>
+              <td>住宅の高性能化、補助金活用と関係</td>
+            </tr>
+            <tr>
+              <td>長期優良住宅</td>
+              <td>長く使える住宅価値</td>
+              <td>認定、税制、資産価値と関係</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        省エネ基準適合義務は、スタート地点です。
+        その先に、性能を見える化するBELS、より高性能なZEH、長く使える価値を示す長期優良住宅があります。
+        どの制度を使うかは、建物の用途、施主の目的、補助金活用、販売戦略によって変わります。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section07">
+      <h2>7. 2050年カーボンニュートラル</h2>
+
+      <p>
+        日本は2050年ネット・ゼロ、カーボンニュートラルの実現を目指しています。
+        環境省は、2035年度60％削減、2040年度73％削減という新たな目標を示し、
+        2050年ネット・ゼロに向けた直線的な経路を進む方針を示しています。
+      </p>
+
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <span>2025年</span>
+          <p>原則すべての新築住宅・非住宅に省エネ基準適合義務化</p>
+        </div>
+        <div class="timeline-item">
+          <span>2030年</span>
+          <p>温室効果ガス46％削減目標。省エネ基準をZEH・ZEB水準へ引き上げる方向</p>
+        </div>
+        <div class="timeline-item">
+          <span>2035年</span>
+          <p>温室効果ガス60％削減目標</p>
+        </div>
+        <div class="timeline-item">
+          <span>2040年</span>
+          <p>温室効果ガス73％削減目標</p>
+        </div>
+        <div class="timeline-item">
+          <span>2050年</span>
+          <p>ネット・ゼロ、カーボンニュートラルの実現</p>
+        </div>
+      </div>
+
+      <p>
+        今後は、ZEBの拡大、非住宅のさらなる省エネ性能強化、LCCO₂、開示義務、説明責任など、
+        建築に求められる視点はさらに広がっていくと考えられます。
+        省エネ基準適合義務はゴールではなく、これからの建築が進むためのスタート地点です。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section08">
+      <h2>8. 資産価値との関係</h2>
+
+      <p>
+        これからは、建てるだけでは弱い時代です。
+        問われるのは、その建物が将来も選ばれるかどうかです。
+      </p>
+
+      <div class="table-scroll">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>性能が低い建物</th>
+              <th>性能が高い建物</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>光熱費が高くなりやすい</td>
+              <td>ランニングコストを抑えやすい</td>
+            </tr>
+            <tr>
+              <td>空室・売却時の不利につながる可能性</td>
+              <td>テナント・購入者に説明しやすい</td>
+            </tr>
+            <tr>
+              <td>将来改修コストが増える可能性</td>
+              <td>早い段階から性能を確保しやすい</td>
+            </tr>
+            <tr>
+              <td>評価されにくい</td>
+              <td>融資・補助金・企業評価で有利に働く可能性</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="source-note">
+        ※制度、融資、補助金の活用可否は案件条件や年度要件により異なります。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section09">
+      <h2>9. ZeroEmiWorksが目指すこと</h2>
+
+      <p>
+        私たちは、ただ計算を行うだけの省エネ計算代行会社ではありません。
+      </p>
+
+      <p class="blog-emphasis">
+        目指しているのは、建築の実務を止めず、未来価値を設計する人の右腕となる会社です。
+      </p>
+
+      <p>
+        BELS、ZEH、長期優良住宅、省エネ適合性判定、補助金申請。
+        制度名ひとつひとつには、それぞれ明確な目的があります。
+      </p>
+
+      <p>
+        だからこそ、制度を正しく理解し、どこまで対応すべきかを判断することが重要です。
+      </p>
+
+      <p>
+        私たちが大切にしているのは、どこから着手すべきか、何を優先すべきか、
+        どこにリスクがあるか、どうすれば手戻りを減らせるかを整理することです。
+      </p>
+
+      <p>
+        制度対応をするためではなく、その建物がこれからも選ばれ続けるために何が必要かを考えること。
+      </p>
+
+      <p>
+        制度は、手段です。目的は、建物の価値を守り、高めること。
+        そこまで含めて支えることが、私たちの役割だと考えています。
+      </p>
+    </section>
+
+    <section class="blog-section" id="section10">
+      <h2>10. まずは相談する</h2>
+
+      <p>
+        図面がまだ揃っていなくても大丈夫です。
+      </p>
+
+      <ul class="blog-check-list">
+        <li>この案件は何が必要なのか。</li>
+        <li>どこから着手すべきか。</li>
+        <li>BELSを取得する意味があるのか。</li>
+        <li>ZEHまで見据えるべきか。</li>
+        <li>長期優良住宅にするべきか。</li>
+        <li>補助金を活用できる可能性があるのか。</li>
+      </ul>
+
+      <p>
+        最初に整理するだけで、設計実務は大きく変わります。
+      </p>
+
+      <p>
+        建築を止めないこと。未来に残る価値をつくること。
+        それは、計算だけでは解決できません。
+        だからこそ、私たちは実務の整理から一緒に考えます。
+      </p>
+
+      <p>
+        これからの建築を、より良い方向へ進めていくために。
+        ぜひ一緒に取り組んでいきましょう。
+      </p>
+    </section>
+
+    <section class="blog-cta">
+      <p class="blog-cta-label">Consultation</p>
+      <h2>まずは、状況を聞かせてください。</h2>
+      <p>
+        省エネ計算、BELS、ZEH、長期優良住宅、補助金申請。
+        どこから整理すべきか、一緒に確認します。
+      </p>
+      <ul class="blog-cta-list">
+        <li>案件ごとに必要な制度整理</li>
+        <li>確認申請・着工までの実務段取り</li>
+        <li>補助金や評価制度を見据えた優先順位</li>
+      </ul>
+      <a href="contact.html">まずは相談する →</a>
+    </section>
+
+    <section class="reference-links">
+      <h2>参考資料</h2>
+      <ul>
+        <li>
+          <a href="https://www.mlit.go.jp/report/press/house05_hh_001001.html" target="_blank" rel="noopener">
+            国土交通省：令和7年4月1日から省エネ基準適合の全面義務化
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mlit.go.jp/report/press/content/001519931.pdf" target="_blank" rel="noopener">
+            国土交通省：全ての新築住宅・非住宅に省エネ基準適合が義務付けられます
+          </a>
+        </li>
+        <li>
+          <a href="https://www.env.go.jp/press/press_03046.html" target="_blank" rel="noopener">
+            環境省：2022年度 温室効果ガス排出・吸収量について
+          </a>
+        </li>
+        <li>
+          <a href="https://www.env.go.jp/earth/ondanka/keikaku/250218.html" target="_blank" rel="noopener">
+            環境省：地球温暖化対策計画
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </article>
+
+</main>
 
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo"><div class="logo-mark">ZE</div><span class="logo-text">ZeroEmiWorks</span></a>
+        <a href="index.html" class="nav-logo">
+          <div class="logo-mark">ZE</div>
+          <span class="logo-text">ZeroEmiWorks</span>
+        </a>
         <p>設計事務所・工務店向けに、住宅・非住宅の省エネ計算・BELS・ZEH・補助金申請を支援。建築の手戻りを減らし、設計実務をスムーズに進めるパートナーです。代表：加藤貴仁</p>
       </div>
+
       <div class="footer-links-grid">
-        <div class="footer-col"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="service.html">Service</a></li><li><a href="flow.html">Flow</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-        <div class="footer-col"><h4>Services</h4><ul><li><a href="service.html">省エネ計算</a></li><li><a href="service.html">BELS申請サポート</a></li><li><a href="service.html">ZEH・GX志向型住宅</a></li><li><a href="service.html">補助金申請サポート</a></li><li><a href="service.html">図面修正・作成</a></li></ul></div>
-        <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">プライバシーポリシー</a></li><li><a href="law.html">特定商取引法に基づく表記</a></li></ul></div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="flow.html">Flow</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service.html">省エネ計算</a></li>
+            <li><a href="service.html">BELS申請サポート</a></li>
+            <li><a href="service.html">ZEH・GX志向型住宅</a></li>
+            <li><a href="service.html">補助金申請サポート</a></li>
+            <li><a href="service.html">図面修正・作成</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">プライバシーポリシー</a></li>
+            <li><a href="law.html">特定商取引法に基づく表記</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <div class="footer-bottom">
       <span class="footer-copy">© 2025 ZeroEmiWorks. All rights reserved.</span>
       <span class="footer-accent">Building for a <span>Zero Emission</span> Future.</span>
     </div>
   </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
