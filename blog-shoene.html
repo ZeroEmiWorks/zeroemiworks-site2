@@ -3,632 +3,697 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>省エネ基準適合義務とは？設計実務で押さえるべきポイント【2026年版】｜ZeroEmiWorks</title>
-  <meta name="description" content="2025年4月の省エネ基準適合義務化を、CO2排出割合・対象範囲・BELS/ZEH/長期優良住宅との関係から整理。制度の本質を押さえ、設計実務を止めずに建物の未来価値を高めるための実務ガイド。">
-
-  <meta property="og:title" content="省エネ基準適合義務とは？設計実務で押さえるべきポイント｜ZeroEmiWorks">
-  <meta property="og:description" content="省エネ基準適合義務を、制度対応だけでなく建物の資産価値・ESG・脱炭素の流れから整理します。">
+  <title>省エネ基準適合義務とは？設計実務で押さえるべきポイント | ZeroEmiWorks Blog</title>
+  <meta name="description" content="2025年4月から原則すべての新築住宅・非住宅に省エネ基準適合が義務化。義務化の背景・対象・ZEH・BELS・2050年カーボンニュートラルへの道筋を設計実務の視点から解説します。">
+  <meta name="author" content="加藤貴仁 / ZeroEmiWorks">
+  <meta property="og:title" content="省エネ基準適合義務とは？設計実務で押さえるべきポイント">
+  <meta property="og:description" content="2025年4月の省エネ基準適合義務化の背景・対象・実務上のポイントを解説します。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://zeroemiworks.com/blog-shoene.html">
   <meta property="og:image" content="https://zeroemiworks.com/ogp.png">
-
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+/* ================================================================
+   ZeroEmiWorks Blog — blog-shoene.html
+   完全独立CSS / 他ページ・style.cssに影響しない
+   設計思想：建築専門誌のような、静かで知性的な読み物
+================================================================ */
+
+.zb *, .zb *::before, .zb *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.zb img { max-width: 100%; height: auto; display: block; }
+.zb a { text-decoration: none; }
+
+.zb {
+  --ink:        #18181a;
+  --ink-2:      #2c2c2e;
+  --ink-3:      #48484a;
+  --muted:      #6c6c70;
+  --dim:        #98989c;
+  --border:     #dcdcde;
+  --border-2:   #c4c4c8;
+  --bg:         #ffffff;
+  --bg-2:       #f5f5f7;
+  --bg-3:       #eeeeef;
+  --g-dark:     #1a4a30;
+  --g-mid:      #256040;
+  --g-base:     #2d7a52;
+  --g-light:    #4a9966;
+  --g-pale:     #e4f2ea;
+  --g-tint:     #f0f9f4;
+  --b-dark:     #1e4060;
+  --b-mid:      #2a5a80;
+  --b-base:     #3a7ca8;
+  --b-light:    #5a9ec8;
+  --b-pale:     #d8eaf5;
+  --b-tint:     #eef6fb;
+  --content:    860px;
+  --sans:       'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  --serif:      'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+}
+
+body.zb-body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink-2);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── ヘッダー ── */
+.zb-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.zb-header-inner {
+  max-width: 1140px; margin: 0 auto;
+  padding: 0 2rem; height: 58px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.zb-logo { display: flex; align-items: center; gap: 10px; }
+.zb-logo-mark {
+  width: 32px; height: 32px;
+  background: var(--g-dark); border-radius: 7px;
+  display: grid; place-items: center; flex-shrink: 0;
+}
+.zb-logo-mark svg { width: 15px; height: 15px; }
+.zb-logo-name { font-size: 13.5px; font-weight: 700; letter-spacing: .06em; color: var(--ink); }
+.zb-logo-sep { color: var(--border-2); margin: 0 3px; }
+.zb-logo-sub { font-size: 11px; letter-spacing: .2em; color: var(--dim); text-transform: uppercase; }
+.zb-nav { display: flex; align-items: center; gap: 2rem; }
+.zb-nav a { font-size: 12.5px; color: var(--muted); letter-spacing: .05em; transition: color .15s; }
+.zb-nav a:hover { color: var(--g-base); }
+.zb-nav-cta {
+  background: var(--g-dark); color: #fff !important;
+  padding: 8px 20px; border-radius: 5px;
+  font-size: 12px !important; font-weight: 600; letter-spacing: .06em;
+  transition: background .15s !important;
+}
+.zb-nav-cta:hover { background: var(--g-mid) !important; }
+.zb-bar { height: 2px; background: var(--border); }
+.zb-bar-inner { height: 100%; width: 0; background: var(--b-base); transition: width .08s linear; }
+
+/* ── タイトルヒーロー（スチールブルー） ── */
+.zb-hero {
+  background: var(--b-tint);
+  border-bottom: 2px solid var(--b-pale);
+  padding: 3rem 2rem 2.5rem;
+}
+.zb-hero-inner { max-width: var(--content); margin: 0 auto; }
+
+.zb-crumb {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 4px 6px; font-size: 12px; color: var(--b-mid);
+  letter-spacing: .04em; margin-bottom: 1.5rem;
+}
+.zb-crumb a { color: var(--b-mid); opacity: .75; transition: opacity .15s; }
+.zb-crumb a:hover { opacity: 1; }
+.zb-crumb .s { color: var(--b-light); opacity: .45; }
+
+.zb-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 1.2rem; }
+.zb-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--b-dark); background: rgba(58,124,168,.1);
+  border: 1px solid rgba(58,124,168,.22); padding: 3px 13px; border-radius: 3px;
+}
+
+.zb-h1 {
+  font-family: var(--serif);
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700; line-height: 1.42; letter-spacing: -.01em;
+  color: var(--b-dark); margin-bottom: 1.6rem;
+}
+
+.zb-meta {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .5rem 1.25rem; font-size: 12px; color: var(--b-mid);
+  padding-top: 1.2rem; border-top: 1px solid var(--b-pale);
+}
+.zb-meta-i { display: flex; align-items: center; gap: 5px; }
+.zb-meta svg { opacity: .55; }
+.zb-meta-d { width: 1px; height: 11px; background: var(--b-light); opacity: .3; }
+
+/* ── 本文コンテナ ── */
+.zb-main { max-width: var(--content); margin: 0 auto; padding: 3rem 2rem 6rem; }
+
+/* リード */
+.zb-lead {
+  font-size: 16.5px; line-height: 2; color: var(--ink-3);
+  margin-bottom: 2.5rem; padding: 1.6rem 1.8rem;
+  background: var(--b-tint); border-left: 3px solid var(--b-base);
+  border-radius: 0 6px 6px 0;
+}
+.zb-lead p { margin-bottom: .9rem; }
+.zb-lead p:last-child { margin-bottom: 0; }
+
+/* 目次 */
+.zb-toc {
+  margin-bottom: 3rem; padding: 1.5rem 1.75rem;
+  border: 1px solid var(--border); border-top: 3px solid var(--g-base);
+  border-radius: 0 0 6px 6px; background: var(--bg-2);
+}
+.zb-toc-lbl {
+  font-size: 11px; font-weight: 700; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--g-base); margin-bottom: 1rem;
+}
+.zb-toc ol { list-style: none; counter-reset: tc; display: flex; flex-direction: column; gap: 2px; }
+.zb-toc ol > li { counter-increment: tc; }
+.zb-toc ol > li > a {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 13.5px; font-weight: 500; color: var(--ink-3);
+  padding: 4px 0; line-height: 1.5; transition: color .15s;
+}
+.zb-toc ol > li > a::before {
+  content: counter(tc, decimal-leading-zero);
+  font-size: 10.5px; font-weight: 700; color: var(--g-base);
+  flex-shrink: 0; margin-top: 3px; min-width: 24px;
+}
+.zb-toc ol > li > a:hover { color: var(--g-base); }
+
+/* ── h2 ── */
+.zb-art h2 {
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.5vw, 25px);
+  font-weight: 700; color: var(--ink);
+  margin: 3.5rem 0 1.4rem;
+  padding: .85rem 1rem .85rem 1.1rem;
+  background: var(--bg-2);
+  border-left: 5px solid var(--g-base);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 4px 4px 0;
+  line-height: 1.4;
+}
+.zb-art h2:first-child { margin-top: 0; }
+
+/* h3 */
+.zb-art h3 {
+  font-family: var(--serif);
+  font-size: clamp(16.5px, 2vw, 19px);
+  font-weight: 700; color: var(--ink);
+  margin: 2.5rem 0 .9rem;
+  padding-left: .9rem;
+  border-left: 3px solid var(--b-base);
+  line-height: 1.5;
+}
+
+/* p */
+.zb-art p { font-size: 17px; line-height: 1.95; color: var(--ink-3); margin-bottom: 1.4rem; }
+.zb-art p:last-child { margin-bottom: 0; }
+.zb-art strong { font-weight: 700; color: var(--ink); }
+
+/* ul / ol */
+.zb-art ul, .zb-art ol { margin: 1rem 0 1.5rem 1rem; display: flex; flex-direction: column; gap: .5rem; }
+.zb-art ul { list-style: none; }
+.zb-art ul li { font-size: 16.5px; line-height: 1.8; color: var(--ink-3); padding-left: 1.1rem; position: relative; }
+.zb-art ul li::before { content: ''; position: absolute; left: 0; top: .7em; width: 5px; height: 5px; background: var(--g-base); border-radius: 50%; }
+.zb-art ol { list-style: decimal; }
+.zb-art ol li { font-size: 16.5px; line-height: 1.8; color: var(--ink-3); padding-left: .25rem; }
+.zb-art hr { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
+
+/* ポイントボックス */
+.zb-pt {
+  margin: 1.75rem 0; padding: 1.25rem 1.6rem;
+  background: var(--g-tint); border: 1px solid rgba(45,122,82,.15);
+  border-left: 4px solid var(--g-base); border-radius: 0 6px 6px 0;
+}
+.zb-pt-lbl { font-size: 10.5px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--g-base); margin-bottom: .55rem; }
+.zb-pt p { font-size: 15.5px; line-height: 1.85; color: var(--ink-3); margin: 0; }
+
+/* 画像 */
+.zb-fig { margin: 2.25rem 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,.05); }
+.zb-fig img { width: 100%; display: block; }
+.zb-fig figcaption { padding: 10px 16px; font-size: 12px; color: var(--dim); background: var(--bg-2); border-top: 1px solid var(--border); line-height: 1.65; }
+
+/* 出典 */
+.zb-src { font-size: 12px; color: var(--dim); margin: .5rem 0 1.75rem; padding-left: .9rem; border-left: 2px solid var(--border); line-height: 1.65; }
+
+/* テーブル */
+.zb-tbl { margin: 1.75rem 0; overflow-x: auto; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 1px 8px rgba(0,0,0,.04); }
+.zb-tbl table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.6; }
+.zb-tbl thead th { background: var(--g-dark); color: #fff; font-weight: 600; font-size: 13px; letter-spacing: .04em; padding: 12px 16px; text-align: left; white-space: nowrap; }
+.zb-tbl tbody tr { border-bottom: 1px solid var(--border); }
+.zb-tbl tbody tr:last-child { border-bottom: none; }
+.zb-tbl tbody tr:nth-child(even) { background: var(--bg-2); }
+.zb-tbl tbody tr:hover { background: var(--g-tint); }
+.zb-tbl td { padding: 11px 16px; color: var(--ink-3); vertical-align: top; }
+.zb-tbl .th { font-weight: 600; color: var(--ink); background: var(--bg-3); border-right: 1px solid var(--border); white-space: nowrap; }
+.zb-tbl-note { font-size: 12px; color: var(--dim); margin: .5rem 0 0; line-height: 1.65; }
+.zb-cmp-old { background: #5a5a5a !important; }
+.zb-cmp-new { background: var(--g-dark) !important; }
+.zb-cmp-bg-old { background: #fafafa !important; }
+.zb-cmp-bg-new { background: var(--g-tint) !important; }
+
+/* フロー */
+.zb-flow { margin: 1.75rem 0; display: flex; flex-direction: column; align-items: flex-start; }
+.zb-fbox {
+  padding: .7rem 1.5rem; border-radius: 5px;
+  font-size: 14px; font-weight: 600; min-width: 230px;
+  text-align: center; border: 1.5px solid; line-height: 1.5;
+}
+.zb-fbox small { font-weight: 400; font-size: 11.5px; display: block; margin-top: 2px; }
+.zb-fl0 { background: var(--bg-3); border-color: var(--border-2); color: var(--muted); }
+.zb-fl1 { background: #f0f7f3; border-color: #7ab89a; color: var(--g-mid); }
+.zb-fl2 { background: #dff0e8; border-color: var(--g-light); color: var(--g-dark); }
+.zb-fl3 { background: var(--g-pale); border-color: var(--g-base); color: var(--g-dark); font-weight: 700; }
+.zb-arr { display: block; width: 1.5px; height: 26px; background: var(--border-2); margin: 0 0 0 114px; position: relative; }
+.zb-arr::after { content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 6px solid var(--border-2); }
+
+/* タイムライン */
+.zb-tline { margin: 1.75rem 0; padding-left: 1.75rem; position: relative; }
+.zb-tline::before { content: ''; position: absolute; left: 6px; top: 10px; bottom: 10px; width: 1.5px; background: var(--border); }
+.zb-ti { position: relative; padding: 0 0 1.4rem 1rem; }
+.zb-ti:last-child { padding-bottom: 0; }
+.zb-ti::before { content: ''; position: absolute; left: -1.48rem; top: 7px; width: 9px; height: 9px; border-radius: 50%; background: var(--g-light); border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--g-light); }
+.zb-ti.hl::before { background: var(--g-base); box-shadow: 0 0 0 2px rgba(45,122,82,.25); }
+.zb-ti-y { font-size: 12.5px; font-weight: 700; color: var(--g-base); letter-spacing: .06em; margin-bottom: .2rem; }
+.zb-ti-t { font-size: 15px; color: var(--ink-3); line-height: 1.7; }
+.zb-ti.hl .zb-ti-t { font-weight: 600; color: var(--ink); }
+
+/* ── CTA ── */
+/* CTA ラベル帯 */
+.zb-cta-banner {
+  margin: 3.5rem 0 0;
+  background: linear-gradient(135deg, #2a5c42 0%, #1e4a34 100%);
+  border-radius: 10px 10px 0 0;
+  padding: 1.1rem 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.zb-cta-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.zb-cta-banner-icon {
+  width: 28px; height: 28px;
+  background: rgba(255,255,255,.15);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.zb-cta-banner-icon svg { width: 14px; height: 14px; }
+.zb-cta-banner-text {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: rgba(255,255,255,.92);
+}
+.zb-cta-banner-text small {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: .06em;
+  color: rgba(255,255,255,.55);
+  margin-top: 1px;
+}
+.zb-cta-banner-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #1e4a34;
+  background: #a8e6c4;
+  padding: 3px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+.zb-cta {
+  margin: 0 0 2rem; padding: 2.5rem 2.25rem;
+  background: var(--g-tint);
+  border: 1.5px solid #8ac4a8;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+.zb-cta-ey { font-size: 10px; font-weight: 700; letter-spacing: .25em; text-transform: uppercase; color: var(--g-base); margin-bottom: .6rem; }
+.zb-cta h3 { font-family: var(--serif); font-size: clamp(19px, 2.2vw, 24px); font-weight: 700; color: var(--ink); margin-bottom: .75rem; line-height: 1.45; }
+.zb-cta p { font-size: 14.5px; color: var(--ink-3); line-height: 1.85; margin-bottom: 1.5rem; }
+.zb-cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; margin-bottom: 1.75rem; }
+.zb-cta-ck { font-size: 13px; color: var(--ink-3); display: flex; align-items: center; gap: 7px; }
+.zb-cta-ck::before { content: ''; width: 5px; height: 5px; background: var(--g-base); border-radius: 50%; flex-shrink: 0; }
+.zb-cta-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--g-dark); color: #fff;
+  font-weight: 700; font-size: 14px; letter-spacing: .05em;
+  padding: 13px 32px; border-radius: 5px;
+  transition: background .15s, transform .15s;
+}
+.zb-cta-btn:hover { background: var(--g-mid); transform: translateY(-1px); }
+.zb-cta-note { margin-top: .85rem; font-size: 11.5px; color: var(--dim); }
+
+/* 著者 */
+.zb-author {
+  margin: 2.5rem 0; padding: 1.5rem;
+  border: 1px solid var(--border); border-radius: 8px; background: var(--bg-2);
+  display: flex; align-items: flex-start; gap: 1rem;
+}
+.zb-av { width: 50px; height: 50px; border-radius: 50%; background: var(--g-pale); border: 2px solid var(--border); flex-shrink: 0; overflow: hidden; display: grid; place-items: center; }
+.zb-av img { width: 100%; height: 100%; object-fit: cover; }
+.zb-an { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+.zb-ar { font-size: 11.5px; color: var(--g-base); margin-bottom: .5rem; }
+.zb-ad { font-size: 13px; color: var(--muted); line-height: 1.75; }
+
+/* 参考資料 */
+.zb-refs { margin: 2.5rem 0; padding-top: 1.75rem; border-top: 1px solid var(--border); }
+.zb-refs-lbl { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--dim); margin-bottom: .9rem; }
+.zb-refs ul { list-style: none; margin: 0; display: flex; flex-direction: column; gap: .35rem; }
+.zb-refs li { font-size: 13px; color: var(--muted); line-height: 1.65; padding-left: .9rem; position: relative; }
+.zb-refs li::before { content: '—'; position: absolute; left: 0; color: var(--border-2); }
+.zb-refs a { color: var(--g-base); border-bottom: 1px solid rgba(45,122,82,.2); }
+.zb-refs a:hover { color: var(--g-mid); }
+
+/* フッター */
+.zb-footer { border-top: 1px solid var(--border); background: var(--bg-2); padding: 2.5rem 2rem; }
+.zb-footer-in { max-width: 1140px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.zb-footer-logo { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: .06em; }
+.zb-footer-logo span { color: var(--g-base); }
+.zb-footer-nav { display: flex; gap: 1.25rem; }
+.zb-footer-nav a { font-size: 12px; color: var(--dim); transition: color .15s; }
+.zb-footer-nav a:hover { color: var(--g-base); }
+.zb-footer-copy { width: 100%; font-size: 11px; color: #bbb; text-align: center; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .zb-nav { display: none; }
+  .zb-hero { padding: 2.25rem 1.25rem 2rem; }
+  .zb-main { padding: 2.25rem 1.25rem 5rem; }
+  .zb-art h2 { font-size: 19px; }
+  .zb-art h3 { font-size: 16.5px; }
+  .zb-art p { font-size: 16px; }
+  .zb-cta-grid { grid-template-columns: 1fr; }
+  .zb-footer-in { flex-direction: column; align-items: flex-start; }
+  .zb-author { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  .zb-tbl td, .zb-tbl thead th { padding: 9px 10px; }
+  .zb-cta { padding: 1.75rem 1.25rem; }
+  .zb-fbox { min-width: 170px; }
+}
+  </style>
 </head>
 
-<body class="blog-article-page">
+<body class="zb-body">
+<div class="zb">
 
-<nav id="nav">
-  <a href="index.html" class="nav-logo">
-    <div class="logo-mark">ZE</div>
-    <span class="logo-text">ZeroEmiWorks</span>
-  </a>
+<!-- ヘッダー -->
+<header class="zb-header">
+  <div class="zb-header-inner">
+    <div class="zb-logo">
+      <div class="zb-logo-mark">
+        <svg viewBox="0 0 15 15" fill="none"><path d="M7.5 1L1 5.5V14h4.5V9h4v5H14V5.5L7.5 1z" fill="white"/></svg>
+      </div>
+      <span class="zb-logo-name">ZeroEmiWorks</span>
+      <span class="zb-logo-sep">/</span>
+      <span class="zb-logo-sub">Blog</span>
+    </div>
+    <nav class="zb-nav">
+      <a href="service.html">サービス</a>
+      <a href="faq.html">FAQ</a>
+      <a href="about.html">会社情報</a>
+      <a href="contact.html" class="zb-nav-cta">無料相談する</a>
+    </nav>
+  </div>
+  <div class="zb-bar"><div class="zb-bar-inner" id="zbBar"></div></div>
+</header>
 
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="service.html">Service</a></li>
-    <li><a href="flow.html">Flow</a></li>
-    <li><a href="blog.html">BLOG</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="nav-cta">まず相談する</a></li>
-  </ul>
-
-  <button class="nav-hamburger" id="navHamburger" aria-label="メニューを開く">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<div class="nav-mobile-menu" id="navMobileMenu">
-  <a href="index.html">Home</a>
-  <a href="service.html">Service</a>
-  <a href="flow.html">Flow</a>
-  <a href="blog.html">BLOG</a>
-  <a href="faq.html">FAQ</a>
-  <a href="about.html">About</a>
-  <a href="contact.html" class="nav-cta">まず相談する</a>
-</div>
-
-<main class="blog-article-main">
-
-  <header class="blog-article-hero">
-    <div class="blog-article-container">
-      <a href="blog.html" class="blog-back-link">← COLUMN一覧へ戻る</a>
-
-      <div class="blog-breadcrumb">COLUMN / 省エネ基準</div>
-      <div class="blog-category">省エネ基準</div>
-      <p class="blog-updated">更新日：2026年4月24日</p>
-
-      <h1>
-        省エネ基準適合義務とは？<br>
-        設計実務で押さえるべきポイント
-      </h1>
-
-      <p class="blog-lead">
-        省エネ基準適合義務は、単なる法改正ではありません。建築そのものの価値基準が変わり始めた、ということです。
-        これからの建築は「建てること」だけでなく、「将来も選ばれ続けること」が問われます。
-      </p>
-
-      <div class="blog-article-meta">
-        <span>ZeroEmiWorks COLUMN</span>
-        <span>省エネ計算・BELS・ZEH・長期優良住宅</span>
+<!-- タイトルヒーロー（スチールブルー帯） -->
+<div class="zb-hero">
+  <div class="zb-hero-inner">
+    <nav class="zb-crumb" aria-label="パンくずリスト">
+      <a href="index.html">ZeroEmiWorks</a><span class="s">›</span>
+      <a href="#">Blog</a><span class="s">›</span>
+      <a href="#">省エネ計算</a><span class="s">›</span>
+      <span>省エネ基準適合義務とは？</span>
+    </nav>
+    <div class="zb-tags">
+      <span class="zb-tag">省エネ基準</span>
+      <span class="zb-tag">義務化</span>
+      <span class="zb-tag">設計実務</span>
+    </div>
+    <h1 class="zb-h1" itemprop="headline">
+      省エネ基準適合義務とは？<br>設計実務で押さえるべきポイント
+    </h1>
+    <div class="zb-meta">
+      <div class="zb-meta-i">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1" y="2.5" width="11" height="9" rx="1" stroke="#3a7ca8" stroke-width="1.1"/><path d="M4 1v3M9 1v3M1 5.5h11" stroke="#3a7ca8" stroke-width="1.1" stroke-linecap="round"/></svg>
+        <time datetime="2025-04-23">2025年4月23日</time>
+      </div>
+      <div class="zb-meta-d"></div>
+      <div class="zb-meta-i">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="5.5" stroke="#3a7ca8" stroke-width="1.1"/><path d="M6.5 3.5v3l2 1.5" stroke="#3a7ca8" stroke-width="1.1" stroke-linecap="round"/></svg>
+        読了目安：約10分
+      </div>
+      <div class="zb-meta-d"></div>
+      <div class="zb-meta-i">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="4" r="2.5" stroke="#3a7ca8" stroke-width="1.1"/><path d="M1 12c0-3.04 2.46-5.5 5.5-5.5S12 8.96 12 12" stroke="#3a7ca8" stroke-width="1.1" stroke-linecap="round"/></svg>
+        加藤貴仁 / ZeroEmiWorks
       </div>
     </div>
-  </header>
+  </div>
+</div>
 
-  <article class="blog-article-container blog-content">
+<!-- 本文 -->
+<main class="zb-main" itemscope itemtype="https://schema.org/Article">
 
-    <section class="blog-intro-box">
-      <p>
-        2025年4月から、原則としてすべての新築住宅・非住宅に対して、省エネ基準への適合が義務化されました。
-        国土交通省も「原則全ての新築住宅・非住宅への省エネ基準適合の義務付け」として、令和7年4月1日施行を公表しています。
-      </p>
-      <p>
-        ただし、本質は「法律だから対応する」ではありません。
-        省エネ性能の高い建物は、資産価値の維持、補助金・融資、テナントや購入者への説明、企業のESG評価にも関わる領域になっています。
-      </p>
-      <p>
-        ZEH、BELS、長期優良住宅、省エネ適判。これらは別々の制度ではなく、これからの建築が向かう方向につながっています。
-      </p>
-    </section>
+  <div class="zb-lead">
+    <p>2025年4月から、原則としてすべての新築住宅・非住宅に対して省エネ基準への適合が義務化されました。</p>
+    <p>これは単なる法改正ではありません。建築そのものの「価値基準」が変わり始めた、ということです。</p>
+    <p>省エネ性能の高い建物は、資産価値が維持される、補助金・融資で優位になる、テナント・購入者に選ばれやすい、企業のESG評価にもつながるという時代に入っています。</p>
+    <p>この記事では、制度の説明だけでなく、なぜ今、省エネ基準適合義務が必要なのか。その背景から整理します。</p>
+  </div>
 
-    <nav class="blog-toc">
-      <p class="blog-toc-title">目次</p>
-      <ol>
-        <li><a href="#section01">省エネ計算とは何か</a></li>
-        <li><a href="#section02">なぜ今、義務化されたのか</a></li>
-        <li><a href="#section03">建築分野のCO₂排出割合</a></li>
-        <li><a href="#section04">2025年4月 義務化の対象</a></li>
-        <li><a href="#section05">ESG・SDGs・GXと建築</a></li>
-        <li><a href="#section06">ZEH・BELS・長期優良住宅</a></li>
-        <li><a href="#section07">2050年カーボンニュートラル</a></li>
-        <li><a href="#section08">資産価値との関係</a></li>
-        <li><a href="#section09">ZeroEmiWorksが目指すこと</a></li>
-        <li><a href="#section10">まずは相談する</a></li>
-      </ol>
-    </nav>
+  <nav class="zb-toc" aria-label="目次">
+    <div class="zb-toc-lbl">目次</div>
+    <ol>
+      <li><a href="#s1">省エネ計算とは何か</a></li>
+      <li><a href="#s2">なぜ今、義務化されたのか</a></li>
+      <li><a href="#s3">建築がCO₂排出の大きな割合を占める理由</a></li>
+      <li><a href="#s4">2025年4月 義務化の対象</a></li>
+      <li><a href="#s5">ESG・SDGs・GXと建築の関係</a></li>
+      <li><a href="#s6">ZEH・BELS・長期優良住宅はどこを目指しているのか</a></li>
+      <li><a href="#s7">2050年カーボンニュートラルとこれからの建築</a></li>
+      <li><a href="#s8">省エネ性能が資産価値を変える時代</a></li>
+      <li><a href="#s9">ZeroEmiWorksが目指すこと</a></li>
+      <li><a href="#s10">まずは相談する</a></li>
+    </ol>
+  </nav>
 
-    <section class="blog-section" id="section01">
-      <h2>1. 省エネ計算とは何か</h2>
+  <div class="zb-art">
 
-      <p>
-        省エネ計算とは、その建物がどれだけエネルギーを消費するかを数値で確認するものです。
-        大きく分けると、確認するのは「外皮性能」と「一次エネルギー消費量」です。
-      </p>
+    <h2 id="s1">1. 省エネ計算とは何か</h2>
+    <p>省エネ計算とは、その建物がどれだけエネルギーを消費するかを数値で確認するものです。大きく分けると、確認するのは「<strong>外皮性能</strong>」と「<strong>一次エネルギー消費量</strong>」です。</p>
+    <h3>外皮性能</h3>
+    <p>建物の「包み込む性能」です。断熱材、窓性能、Low-Eガラス、屋根、壁、床、玄関ドアなどをもとに、どれだけ熱を逃がさないか、どれだけ日射を防ぐかを確認します。代表的な指標は、<strong>UA値（外皮平均熱貫流率）</strong>と<strong>ηAC値（冷房期の日射熱取得率）</strong>です。</p>
+    <h3>一次エネルギー消費量</h3>
+    <p>建物の「使うエネルギー」です。空調、換気、給湯、照明、昇降機、太陽光発電などを含め、年間でどれだけエネルギーを使うかを確認します。</p>
+    <div class="zb-pt">
+      <div class="zb-pt-lbl">ポイント</div>
+      <p>省エネ計算は確認申請のためだけの数字ではありません。この数値は、光熱費・快適性・テナント価値・売却時の評価・補助金活用に直結します。省エネ計算は、<strong>建物の未来価値を設計するための数字</strong>です。</p>
+    </div>
+    <hr>
 
-      <h3>外皮性能</h3>
-      <p>
-        外皮性能は、建物の「包み込む性能」です。
-        断熱材、窓性能、Low-Eガラス、屋根、壁、床、玄関ドアなどをもとに、
-        どれだけ熱を逃がさないか、どれだけ日射を防ぐかを確認します。
-      </p>
+    <h2 id="s2">2. なぜ今、義務化されたのか</h2>
+    <p>理由は明確です。地球温暖化が、もう未来の話ではないからです。</p>
+    <p>世界では、気温上昇・異常気象・豪雨・猛暑・災害の激甚化が進んでいます。その大きな原因が温室効果ガスであり、特にCO₂（二酸化炭素）です。そしてその多くは、石油・石炭・天然ガスといった化石燃料を使うことで発生します。</p>
+    <p>建物で電気を使う。空調を回す。給湯を使う——それ自体が、地球温暖化とつながっています。だからこそ、建物の省エネ性能を上げることは、単なる設計ではなく、社会全体の課題になりました。</p>
+    <hr>
 
-      <div class="blog-point-list">
-        <span>UA値（外皮平均熱貫流率）</span>
-        <span>ηAC値（冷房期の日射熱取得率）</span>
+    <h2 id="s3">3. 建築がCO₂排出の大きな割合を占める理由</h2>
+    <p>「建築って、そんなに関係あるの？」と思われることがあります。答えは、<strong>非常に大きい</strong>です。環境省の資料では、家庭部門（住宅）と業務その他部門（非住宅）を合わせると、日本全体のCO₂排出の約3割を占めます。</p>
+    <figure class="zb-fig">
+      <img src="assets/co2-emissions-chart.png" alt="日本のCO₂排出量 部門別グラフ（環境省2022年度）" loading="lazy">
+      <figcaption>出典：環境省「2022年度（令和4年度）温室効果ガス排出・吸収量について」等をもとに掲載</figcaption>
+    </figure>
+    <p class="zb-src">家庭部門（住宅）約16%、業務その他部門（非住宅）約19%、合計で建築分野全体の約35%を占めます。エネルギー起源CO₂排出量の部門別割合をもとに整理。資料年度・集計区分により変動します。</p>
+    <p>建物は一度建てると、何十年も使われます。設計時の判断が、10年後・20年後・30年後まで影響します。だからこそ、設計段階で省エネ性能をどう考えるかが重要になります。</p>
+    <hr>
+
+    <h2 id="s4">4. 2025年4月 義務化の対象</h2>
+    <p>以前は、建物の規模や用途によって、適合義務・届出義務・説明義務などの扱いが分かれていました。しかし<strong>2025年4月以降は、原則としてすべての新築住宅・非住宅に省エネ基準への適合が求められます</strong>。</p>
+    <figure class="zb-fig">
+      <img src="assets/energy-standard-obligation.png" alt="省エネ基準適合義務化の概要図（国土交通省）" loading="lazy">
+      <figcaption>出典：国土交通省「省エネ基準適合に係る規制の概要」等をもとに掲載</figcaption>
+    </figure>
+    <p>図が示すように、2025年4月以降は住宅・非住宅を問わず<strong>原則すべての新築建物が適合義務の対象</strong>となります。</p>
+    <p>実務上は、「対象かどうか」よりも、<strong>「どの段階で仕様を固めるか」「どの資料をいつ揃えるか」</strong>が重要になります。省エネ基準適合義務は、申請直前に確認するものではなく、基本設計から意識しておくべき前提です。</p>
+    <hr>
+
+    <h2 id="s5">5. ESG・SDGs・GXと建築の関係</h2>
+    <p>ESG、SDGs、GXは建築とも直結しています。企業は今、「利益を出しているか」だけではなく、「環境や社会にどう向き合っているか」も見られています。</p>
+    <p>建物も同じです。環境性能の高いオフィス・ZEH住宅・BELS取得建物・脱炭素対応施設は、企業の姿勢そのものを表します。結果として、融資・採用・投資判断・テナント誘致・ブランド価値に影響します。建物は、企業のESGを表す重要な資産になっていきます。</p>
+    <hr>
+
+    <h2 id="s6">6. ZEH・BELS・長期優良住宅はどこを目指しているのか</h2>
+    <p>ZEH、BELS、長期優良住宅、省エネ適判は、別々に見える制度ですが、目指す方向はつながっています。</p>
+    <div class="zb-flow">
+      <div class="zb-fbox zb-fl0">省エネ適判<small>最低基準を満たす</small></div>
+      <div class="zb-arr"></div>
+      <div class="zb-fbox zb-fl1">BELS<small>性能の見える化</small></div>
+      <div class="zb-arr"></div>
+      <div class="zb-fbox zb-fl2">ZEH<small>高性能化 ＋ 創エネ</small></div>
+      <div class="zb-arr"></div>
+      <div class="zb-fbox zb-fl3">長期優良住宅<small>資産価値 ＋ 長寿命化</small></div>
+    </div>
+    <div class="zb-tbl">
+      <table>
+        <thead><tr><th>制度</th><th>役割</th><th>実務上の意味</th></tr></thead>
+        <tbody>
+          <tr><td class="th">省エネ適判</td><td>最低基準を満たす</td><td>建築確認・着工に関わる基本条件</td></tr>
+          <tr><td class="th">BELS</td><td>性能を見える化する</td><td>建物の省エネ性能を第三者評価として示す</td></tr>
+          <tr><td class="th">ZEH</td><td>高断熱・省エネ・創エネ</td><td>住宅の高性能化、補助金活用と関係</td></tr>
+          <tr><td class="th">長期優良住宅</td><td>長く使える住宅価値</td><td>認定、税制、資産価値と関係</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>省エネ基準適合義務は、スタート地点です。その先に、性能を見える化するBELS、より高性能なZEH、長く使える価値を示す長期優良住宅があります。どの制度を使うかは、建物の用途・施主の目的・補助金活用・販売戦略によって変わります。</p>
+    <hr>
+
+    <h2 id="s7">7. 2050年カーボンニュートラルとこれからの建築</h2>
+    <p>日本は2050年カーボンニュートラルを目指しています。省エネ基準適合義務はゴールではなく、これからの建築が進むためのスタート地点です。</p>
+    <div class="zb-tline">
+      <div class="zb-ti hl"><div class="zb-ti-y">2025年</div><div class="zb-ti-t">原則すべての新築住宅・非住宅に省エネ基準適合義務化</div></div>
+      <div class="zb-ti"><div class="zb-ti-y">2030年</div><div class="zb-ti-t">省エネ基準をZEH・ZEB水準へ引き上げる方向</div></div>
+      <div class="zb-ti"><div class="zb-ti-y">2035年</div><div class="zb-ti-t">温室効果ガス60%削減目標</div></div>
+      <div class="zb-ti"><div class="zb-ti-y">2040年</div><div class="zb-ti-t">温室効果ガス73%削減目標</div></div>
+      <div class="zb-ti"><div class="zb-ti-y">2050年</div><div class="zb-ti-t">ネット・ゼロ、カーボンニュートラルの実現</div></div>
+    </div>
+    <p>今後は、非住宅のさらなる省エネ性能強化、LCCO₂、開示義務、説明責任など、建築に求められる視点はさらに広がっていくと考えられます。</p>
+    <hr>
+
+    <h2 id="s8">8. 省エネ性能が資産価値を変える時代</h2>
+    <p>これからは、建てるだけでは弱い時代です。問われるのは、<strong>その建物が将来も選ばれるかどうか</strong>です。</p>
+    <div class="zb-tbl">
+      <table>
+        <thead><tr><th class="zb-cmp-old">性能が低い建物</th><th class="zb-cmp-new">性能が高い建物</th></tr></thead>
+        <tbody>
+          <tr><td class="zb-cmp-bg-old">光熱費が高くなりやすい</td><td class="zb-cmp-bg-new">ランニングコストを抑えやすい</td></tr>
+          <tr><td class="zb-cmp-bg-old">空室・売却時の不利につながる可能性</td><td class="zb-cmp-bg-new">テナント・購入者に説明しやすい</td></tr>
+          <tr><td class="zb-cmp-bg-old">将来改修コストが増える可能性</td><td class="zb-cmp-bg-new">早い段階から性能を確保しやすい</td></tr>
+          <tr><td class="zb-cmp-bg-old">評価されにくい</td><td class="zb-cmp-bg-new">融資・補助金・企業評価で有利に働く可能性</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="zb-tbl-note">※制度、融資、補助金の活用可否は案件条件や年度要件により異なります。</p>
+    <hr>
+
+    <h2 id="s9">9. ZeroEmiWorksが目指すこと</h2>
+    <p>私たちは、ただ計算を行うだけの省エネ計算代行会社ではありません。目指しているのは、<strong>建築の実務を止めず、未来価値を設計する人の右腕となる会社</strong>です。</p>
+    <p>BELS、ZEH、長期優良住宅、省エネ適合性判定、補助金申請——制度名ひとつひとつには、それぞれ明確な目的があります。だからこそ、制度を正しく理解し、どこまで対応すべきかを判断することが重要です。</p>
+    <p>制度は、手段です。目的は、建物の価値を守り、高めること。そこまで含めて支えることが、私たちの役割だと考えています。</p>
+    <hr>
+
+    <h2 id="s10">10. まずは相談する</h2>
+    <p>図面がまだ揃っていなくても大丈夫です。</p>
+    <ul>
+      <li>この案件は何が必要なのか</li>
+      <li>どこから着手すべきか</li>
+      <li>BELSを取得する意味があるのか</li>
+      <li>ZEHまで見据えるべきか</li>
+      <li>長期優良住宅にするべきか</li>
+      <li>補助金を活用できる可能性があるのか</li>
+    </ul>
+    <p>最初に整理するだけで、設計実務は大きく変わります。建築を止めないこと。未来に残る価値をつくること——それは、計算だけでは解決できません。</p>
+
+  </div><!-- /zb-art -->
+
+  <!-- CTA -->
+  <div class="zb-cta-banner">
+    <div class="zb-cta-banner-left">
+      <div class="zb-cta-banner-icon">
+        <svg viewBox="0 0 14 14" fill="none">
+          <path d="M7 1L1 4.5V13h3.5V8.5h5V13H13V4.5L7 1z" fill="white" fill-opacity=".9"/>
+        </svg>
       </div>
+      <span class="zb-cta-banner-text">
+        ZeroEmiWorks 無料相談
+        <small>省エネ計算・BELS・ZEH・補助金申請サポート</small>
+      </span>
+    </div>
+    <span class="zb-cta-banner-badge">相談無料</span>
+  </div>
+  <aside class="zb-cta">
+    <h3>まずは、状況を聞かせてください。</h3>
+    <p>省エネ計算、BELS、ZEH、長期優良住宅、補助金申請。<br>どこから整理すべきか、一緒に確認します。</p>
+    <div class="zb-cta-grid">
+      <div class="zb-cta-ck">図面がなくても相談可</div>
+      <div class="zb-cta-ck">概算相談歓迎</div>
+      <div class="zb-cta-ck">最短2営業日以内に返信</div>
+      <div class="zb-cta-ck">住宅・非住宅どちらも可</div>
+      <div class="zb-cta-ck">相談・見積もりは無料</div>
+      <div class="zb-cta-ck">設計段階から相談可</div>
+    </div>
+    <a href="contact.html" class="zb-cta-btn">まずは相談する →</a>
+    <p class="zb-cta-note">ZeroEmiWorks — 省エネ計算・BELS・ZEH・補助金申請サポート</p>
+  </aside>
 
-      <h3>一次エネルギー消費量</h3>
-      <p>
-        一次エネルギー消費量は、建物の「使うエネルギー」です。
-        空調、換気、給湯、照明、昇降機、太陽光発電などを含め、
-        年間でどれだけエネルギーを使うかを確認します。
-      </p>
+  <!-- 著者 -->
+  <div class="zb-author">
+    <div class="zb-av">
+      <img src="founder.jpg" alt="加藤貴仁" onerror="this.style.display='none'">
+    </div>
+    <div>
+      <div class="zb-an">加藤 貴仁</div>
+      <div class="zb-ar">建築環境設計サポート / ZeroEmiWorks 代表</div>
+      <p class="zb-ad">設計事務所・工務店向けに、省エネ計算・BELS・ZEH・補助金申請に関する実務サポートを提供。「建築の手戻りを減らし、設計実務をスムーズに」をミッションとする。</p>
+    </div>
+  </div>
 
-      <p>
-        ここで重要なのは、省エネ計算は確認申請のためだけの数字ではないということです。
-        この数値は、光熱費、快適性、テナント価値、売却時の評価、補助金活用に直結します。
-      </p>
-
-      <p class="blog-emphasis">
-        つまり、省エネ計算は、建物の未来価値を設計するための数字です。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section02">
-      <h2>2. なぜ今、義務化されたのか</h2>
-
-      <p>
-        理由は明確です。地球温暖化が、もう未来の話ではないからです。
-      </p>
-
-      <p>
-        世界では、気温上昇、異常気象、豪雨、猛暑、災害の激甚化が進んでいます。
-        その大きな原因が温室効果ガスであり、特にCO₂です。
-        そしてその多くは、石油、石炭、天然ガスといった化石燃料を使うことで発生します。
-      </p>
-
-      <p>
-        建物で電気を使う。空調を回す。給湯を使う。
-        それ自体が、地球温暖化とつながっています。
-      </p>
-
-      <p>
-        だからこそ、建物の省エネ性能を上げることは、単なる設計ではなく、社会全体の課題になりました。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section03">
-      <h2>3. 建築分野のCO₂排出割合</h2>
-
-      <p>
-        「建築って、そんなに関係あるの？」と思われることがあります。
-        答えは、非常に大きいです。
-      </p>
-
-      <p>
-        環境省の資料では、家庭部門と業務その他部門を合わせると、
-        日本全体のエネルギー起源CO₂排出量の約3割を占めます。
-      </p>
-
-      <figure class="source-image-card">
-        <img src="assets/co2-emissions-chart.png" alt="エネルギー起源CO2排出量の部門別割合" class="source-image">
-        <figcaption>
-          出典：環境省「2022年度（令和4年度）温室効果ガス排出・吸収量について」等をもとに掲載
-        </figcaption>
-      </figure>
-
-      <div class="table-scroll">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>部門</th>
-              <th>内容</th>
-              <th>割合</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>家庭部門</td>
-              <td>住宅</td>
-              <td>約16％</td>
-            </tr>
-            <tr>
-              <td>業務その他部門</td>
-              <td>オフィス・商業施設など</td>
-              <td>約19％</td>
-            </tr>
-            <tr>
-              <td><strong>合計</strong></td>
-              <td><strong>建築分野全体</strong></td>
-              <td><strong>約35％</strong></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="source-note">
-        ※割合はエネルギー起源CO₂排出量における部門別割合をもとに整理しています。資料年度や集計区分により数値は変動します。
-      </p>
-
-      <p>
-        建物は一度建てると、何十年も使われます。
-        設計時の判断が、10年後、20年後、30年後まで影響します。
-        だからこそ、設計段階で省エネ性能をどう考えるかが重要になります。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section04">
-      <h2>4. 2025年4月 義務化の対象</h2>
-
-      <p>
-        以前は、建物の規模や用途によって、適合義務、届出義務、説明義務などの扱いが分かれていました。
-        しかし2025年4月以降は、原則としてすべての新築住宅・非住宅に省エネ基準への適合が求められます。
-      </p>
-
-      <figure class="source-image-card">
-        <img src="assets/energy-standard-obligation.png" alt="省エネ基準適合に係る規制の概要" class="source-image">
-        <figcaption>
-          出典：国土交通省「省エネ基準適合に係る規制の概要」等をもとに掲載
-        </figcaption>
-      </figure>
-
-      <div class="table-scroll">
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th>項目</th>
-              <th>旧制度</th>
-              <th>2025年4月以降</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>対象</td>
-              <td>建物の規模や用途により扱いが分かれていた</td>
-              <td>原則すべての新築住宅・非住宅が対象</td>
-            </tr>
-            <tr>
-              <td>住宅</td>
-              <td>一定規模では届出義務・説明義務など</td>
-              <td>省エネ基準への適合義務</td>
-            </tr>
-            <tr>
-              <td>非住宅</td>
-              <td>一定規模以上を中心に適合義務</td>
-              <td>規模にかかわらず原則適合義務</td>
-            </tr>
-            <tr>
-              <td>実務への影響</td>
-              <td>案件ごとに対象判断が必要</td>
-              <td>基本的に省エネ確認を前提に進める</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>
-        実務上は、「対象かどうか」よりも、
-        「どの段階で仕様を固めるか」「どの資料をいつ揃えるか」が重要になります。
-        省エネ基準適合義務は、申請直前に確認するものではなく、基本設計から意識しておくべき前提です。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section05">
-      <h2>5. ESG・SDGs・GXと建築</h2>
-
-      <p>
-        ESG、SDGs、GXは建築とも直結しています。
-        企業は今、「利益を出しているか」だけではなく、
-        「環境や社会にどう向き合っているか」も見られています。
-      </p>
-
-      <p>
-        建物も同じです。
-        環境性能の高いオフィス、ZEH住宅、BELS取得建物、脱炭素対応施設は、
-        企業の姿勢そのものを表します。
-      </p>
-
-      <div class="blog-highlight-box">
-        <p>
-          建物の環境性能は、融資、採用、投資判断、テナント誘致、ブランド価値に影響します。
-          これからの建物は、企業のESGを表す重要な資産になっていきます。
-        </p>
-      </div>
-    </section>
-
-    <section class="blog-section" id="section06">
-      <h2>6. ZEH・BELS・長期優良住宅</h2>
-
-      <p>
-        ZEH、BELS、長期優良住宅、省エネ適判は、別々に見える制度ですが、目指す方向はつながっています。
-      </p>
-
-      <div class="relation-flow">
-        <div class="relation-item">
-          <span class="relation-label">省エネ適判</span>
-          <strong>最低基準</strong>
-        </div>
-        <div class="relation-arrow">↓</div>
-        <div class="relation-item">
-          <span class="relation-label">BELS</span>
-          <strong>性能の見える化</strong>
-        </div>
-        <div class="relation-arrow">↓</div>
-        <div class="relation-item">
-          <span class="relation-label">ZEH</span>
-          <strong>高性能化＋創エネ</strong>
-        </div>
-        <div class="relation-arrow">↓</div>
-        <div class="relation-item">
-          <span class="relation-label">長期優良住宅</span>
-          <strong>資産価値・長寿命化</strong>
-        </div>
-      </div>
-
-      <div class="table-scroll">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>制度</th>
-              <th>役割</th>
-              <th>実務上の意味</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>省エネ適判</td>
-              <td>最低基準を満たす</td>
-              <td>建築確認・着工に関わる基本条件</td>
-            </tr>
-            <tr>
-              <td>BELS</td>
-              <td>性能を見える化する</td>
-              <td>建物の省エネ性能を第三者評価として示す</td>
-            </tr>
-            <tr>
-              <td>ZEH</td>
-              <td>高断熱・省エネ・創エネ</td>
-              <td>住宅の高性能化、補助金活用と関係</td>
-            </tr>
-            <tr>
-              <td>長期優良住宅</td>
-              <td>長く使える住宅価値</td>
-              <td>認定、税制、資産価値と関係</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>
-        省エネ基準適合義務は、スタート地点です。
-        その先に、性能を見える化するBELS、より高性能なZEH、長く使える価値を示す長期優良住宅があります。
-        どの制度を使うかは、建物の用途、施主の目的、補助金活用、販売戦略によって変わります。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section07">
-      <h2>7. 2050年カーボンニュートラル</h2>
-
-      <p>
-        日本は2050年ネット・ゼロ、カーボンニュートラルの実現を目指しています。
-        環境省は、2035年度60％削減、2040年度73％削減という新たな目標を示し、
-        2050年ネット・ゼロに向けた直線的な経路を進む方針を示しています。
-      </p>
-
-      <div class="timeline-list">
-        <div class="timeline-item">
-          <span>2025年</span>
-          <p>原則すべての新築住宅・非住宅に省エネ基準適合義務化</p>
-        </div>
-        <div class="timeline-item">
-          <span>2030年</span>
-          <p>温室効果ガス46％削減目標。省エネ基準をZEH・ZEB水準へ引き上げる方向</p>
-        </div>
-        <div class="timeline-item">
-          <span>2035年</span>
-          <p>温室効果ガス60％削減目標</p>
-        </div>
-        <div class="timeline-item">
-          <span>2040年</span>
-          <p>温室効果ガス73％削減目標</p>
-        </div>
-        <div class="timeline-item">
-          <span>2050年</span>
-          <p>ネット・ゼロ、カーボンニュートラルの実現</p>
-        </div>
-      </div>
-
-      <p>
-        今後は、ZEBの拡大、非住宅のさらなる省エネ性能強化、LCCO₂、開示義務、説明責任など、
-        建築に求められる視点はさらに広がっていくと考えられます。
-        省エネ基準適合義務はゴールではなく、これからの建築が進むためのスタート地点です。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section08">
-      <h2>8. 資産価値との関係</h2>
-
-      <p>
-        これからは、建てるだけでは弱い時代です。
-        問われるのは、その建物が将来も選ばれるかどうかです。
-      </p>
-
-      <div class="table-scroll">
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th>性能が低い建物</th>
-              <th>性能が高い建物</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>光熱費が高くなりやすい</td>
-              <td>ランニングコストを抑えやすい</td>
-            </tr>
-            <tr>
-              <td>空室・売却時の不利につながる可能性</td>
-              <td>テナント・購入者に説明しやすい</td>
-            </tr>
-            <tr>
-              <td>将来改修コストが増える可能性</td>
-              <td>早い段階から性能を確保しやすい</td>
-            </tr>
-            <tr>
-              <td>評価されにくい</td>
-              <td>融資・補助金・企業評価で有利に働く可能性</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="source-note">
-        ※制度、融資、補助金の活用可否は案件条件や年度要件により異なります。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section09">
-      <h2>9. ZeroEmiWorksが目指すこと</h2>
-
-      <p>
-        私たちは、ただ計算を行うだけの省エネ計算代行会社ではありません。
-      </p>
-
-      <p class="blog-emphasis">
-        目指しているのは、建築の実務を止めず、未来価値を設計する人の右腕となる会社です。
-      </p>
-
-      <p>
-        BELS、ZEH、長期優良住宅、省エネ適合性判定、補助金申請。
-        制度名ひとつひとつには、それぞれ明確な目的があります。
-      </p>
-
-      <p>
-        だからこそ、制度を正しく理解し、どこまで対応すべきかを判断することが重要です。
-      </p>
-
-      <p>
-        私たちが大切にしているのは、どこから着手すべきか、何を優先すべきか、
-        どこにリスクがあるか、どうすれば手戻りを減らせるかを整理することです。
-      </p>
-
-      <p>
-        制度対応をするためではなく、その建物がこれからも選ばれ続けるために何が必要かを考えること。
-      </p>
-
-      <p>
-        制度は、手段です。目的は、建物の価値を守り、高めること。
-        そこまで含めて支えることが、私たちの役割だと考えています。
-      </p>
-    </section>
-
-    <section class="blog-section" id="section10">
-      <h2>10. まずは相談する</h2>
-
-      <p>
-        図面がまだ揃っていなくても大丈夫です。
-      </p>
-
-      <ul class="blog-check-list">
-        <li>この案件は何が必要なのか。</li>
-        <li>どこから着手すべきか。</li>
-        <li>BELSを取得する意味があるのか。</li>
-        <li>ZEHまで見据えるべきか。</li>
-        <li>長期優良住宅にするべきか。</li>
-        <li>補助金を活用できる可能性があるのか。</li>
-      </ul>
-
-      <p>
-        最初に整理するだけで、設計実務は大きく変わります。
-      </p>
-
-      <p>
-        建築を止めないこと。未来に残る価値をつくること。
-        それは、計算だけでは解決できません。
-        だからこそ、私たちは実務の整理から一緒に考えます。
-      </p>
-
-      <p>
-        これからの建築を、より良い方向へ進めていくために。
-        ぜひ一緒に取り組んでいきましょう。
-      </p>
-    </section>
-
-    <section class="blog-cta">
-      <p class="blog-cta-label">Consultation</p>
-      <h2>まずは、状況を聞かせてください。</h2>
-      <p>
-        省エネ計算、BELS、ZEH、長期優良住宅、補助金申請。
-        どこから整理すべきか、一緒に確認します。
-      </p>
-      <ul class="blog-cta-list">
-        <li>案件ごとに必要な制度整理</li>
-        <li>確認申請・着工までの実務段取り</li>
-        <li>補助金や評価制度を見据えた優先順位</li>
-      </ul>
-      <a href="contact.html">まずは相談する →</a>
-    </section>
-
-    <section class="reference-links">
-      <h2>参考資料</h2>
-      <ul>
-        <li>
-          <a href="https://www.mlit.go.jp/report/press/house05_hh_001001.html" target="_blank" rel="noopener">
-            国土交通省：令和7年4月1日から省エネ基準適合の全面義務化
-          </a>
-        </li>
-        <li>
-          <a href="https://www.mlit.go.jp/report/press/content/001519931.pdf" target="_blank" rel="noopener">
-            国土交通省：全ての新築住宅・非住宅に省エネ基準適合が義務付けられます
-          </a>
-        </li>
-        <li>
-          <a href="https://www.env.go.jp/press/press_03046.html" target="_blank" rel="noopener">
-            環境省：2022年度 温室効果ガス排出・吸収量について
-          </a>
-        </li>
-        <li>
-          <a href="https://www.env.go.jp/earth/ondanka/keikaku/250218.html" target="_blank" rel="noopener">
-            環境省：地球温暖化対策計画
-          </a>
-        </li>
-      </ul>
-    </section>
-
-  </article>
+  <!-- 参考資料 -->
+  <section class="zb-refs">
+    <div class="zb-refs-lbl">参考資料</div>
+    <ul>
+      <li><a href="https://www.mlit.go.jp/jutakukentiku/build/r7_syoene_gimu.html" target="_blank" rel="noopener">国土交通省：令和7年4月1日から省エネ基準適合の全面義務化</a></li>
+      <li><a href="https://www.mlit.go.jp/jutakukentiku/build/jutakukentiku_house_tk_000132.html" target="_blank" rel="noopener">国土交通省：全ての新築住宅・非住宅に省エネ基準適合が義務付けられます</a></li>
+      <li><a href="https://www.env.go.jp/press/press_03661.html" target="_blank" rel="noopener">環境省：2022年度 温室効果ガス排出・吸収量について</a></li>
+      <li><a href="https://www.env.go.jp/earth/ondanka/keikaku/global_keikaku.html" target="_blank" rel="noopener">環境省：地球温暖化対策計画</a></li>
+    </ul>
+  </section>
 
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo">
-          <div class="logo-mark">ZE</div>
-          <span class="logo-text">ZeroEmiWorks</span>
-        </a>
-        <p>設計事務所・工務店向けに、住宅・非住宅の省エネ計算・BELS・ZEH・補助金申請を支援。建築の手戻りを減らし、設計実務をスムーズに進めるパートナーです。代表：加藤貴仁</p>
-      </div>
-
-      <div class="footer-links-grid">
-        <div class="footer-col">
-          <h4>Pages</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="flow.html">Flow</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="service.html">省エネ計算</a></li>
-            <li><a href="service.html">BELS申請サポート</a></li>
-            <li><a href="service.html">ZEH・GX志向型住宅</a></li>
-            <li><a href="service.html">補助金申請サポート</a></li>
-            <li><a href="service.html">図面修正・作成</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="privacy.html">プライバシーポリシー</a></li>
-            <li><a href="law.html">特定商取引法に基づく表記</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <span class="footer-copy">© 2025 ZeroEmiWorks. All rights reserved.</span>
-      <span class="footer-accent">Building for a <span>Zero Emission</span> Future.</span>
-    </div>
+<!-- フッター -->
+<footer class="zb-footer">
+  <div class="zb-footer-in">
+    <div class="zb-footer-logo">Zero<span>Emi</span>Works Blog</div>
+    <nav class="zb-footer-nav">
+      <a href="index.html">サービス</a>
+      <a href="about.html">会社情報</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+    <p class="zb-footer-copy">© 2025 ZeroEmiWorks. All rights reserved.</p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+</div><!-- /zb -->
+
+<script>
+(function(){
+  var bar = document.getElementById('zbBar');
+  if(bar){
+    window.addEventListener('scroll', function(){
+      var d = document.documentElement;
+      bar.style.width = Math.min(d.scrollTop/(d.scrollHeight-d.clientHeight)*100,100).toFixed(1)+'%';
+    },{passive:true});
+  }
+  document.querySelectorAll('.zb-toc a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var t = document.querySelector(a.getAttribute('href'));
+      if(!t) return;
+      e.preventDefault();
+      window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-70, behavior:'smooth'});
+    });
+  });
+})();
+</script>
 </body>
 </html>
