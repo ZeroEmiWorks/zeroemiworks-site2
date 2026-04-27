@@ -595,6 +595,7 @@ footer {
 .article-card:hover { border-color: rgba(93,216,138,0.3); transform: translateY(-4px); }
 .article-tag { display: inline-block; font-size: 10px; letter-spacing: 0.12em; color: var(--c-accent); border: 1px solid rgba(93,216,138,0.3); padding: 3px 10px; border-radius: 100px; text-transform: uppercase; align-self: flex-start; }
 .article-title { font-size: 15px; font-weight: 500; line-height: 1.6; letter-spacing: 0.02em; flex: 1; }
+.article-desc { font-size: 13px; line-height: 1.8; color: var(--c-muted); font-weight: 300; }
 .article-meta { font-size: 12px; color: var(--c-muted); display: flex; justify-content: space-between; }
 
 /* About (TOP) */
@@ -888,6 +889,8 @@ textarea { min-height: 140px; resize: vertical; line-height: 1.7; }
   .cta-section,
   .page-cta { padding: 5rem 1.5rem; }
   .knowledge-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .article-title { font-size: 14px; line-height: 1.7; }
+  .article-desc { font-size: 12px; line-height: 1.75; }
 
   .service-card { grid-template-columns: 1fr; padding: 2rem; }
   .form-row { grid-template-columns: 1fr; }
